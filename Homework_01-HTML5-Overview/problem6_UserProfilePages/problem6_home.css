@@ -1,0 +1,29 @@
+
+#content {
+	width:950px;
+	height:580px;
+	background-color:#B0DEEB;
+	margin:auto;
+	padding:15px;
+	font-family:Ariel;
+}
+
+h1 {
+	font-size:2.5em;
+}
+
+h2 {
+	font-size:1.9em;
+}
+
+a {
+	color:#684DA4;
+}
+
+p {
+	font-size:1.1em;
+}
+
+ul li a {
+	font-size:1.1em;
+}

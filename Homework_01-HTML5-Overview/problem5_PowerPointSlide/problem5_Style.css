@@ -1,0 +1,46 @@
+
+#content {
+	background-image: url("background-logo_05.PNG");
+	background-repeat: no-repeat;
+	width: 960px;
+	height: 540px;
+	margin: auto;
+	padding: 10px 20px;
+	font-family: Consolas;
+}
+
+h1 {
+	font-size: 2.5em;
+	color: #EB6E20;
+}
+
+.section {
+	width: 85%;
+	margin: auto;
+	margin-top: 5px;
+	background-color: rgba(61,61,57,0.5);
+	border: solid 1px white;
+}
+
+.section  li {
+	font-size: 0.7em;
+	color: white;
+	list-style-type: none;
+}
+
+.square  {
+	font-size:1.9em;
+}
+
+.white {
+	color: white;
+}
+
+ li {
+	color: #EB6E20;
+	list-style-type: square;
+}
+
+.tag {
+	font-weight: bold;
+}

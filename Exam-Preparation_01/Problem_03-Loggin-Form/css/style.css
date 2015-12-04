@@ -1,0 +1,84 @@
+body{
+	background-image: url('../resources/backgroundImage.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Tahoma, Helvetica, sans-serif;
+	margin: 0;
+	padding: 50px 60px;
+}
+
+body> #wrapper{
+	margin: auto;
+	box-sizing: border-box;
+}
+
+body> #wrapper> header{
+	text-align: center;
+	color: #fff;
+	border-bottom: solid 2px #DEB887;
+	box-sizing: border-box;
+}
+
+#wrapper> section> div{
+	background-color: rgba(98, 21, 14, 0.6);
+	width: 530px;
+	height: 350px;
+	display: inline-block;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin: 20px 25px;
+	text-align: center;
+	color: #DEB887;
+}
+
+#wrapper> section> div> form{
+	margin: 20px;
+}
+
+#wrapper> section> div> form> label{
+	background-color: rgba(92, 54, 38, 0.7);
+	width: 39px;
+	height: 40px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-radius: 8px 0 0 8px;
+	vertical-align: middle;
+}
+
+#wrapper> section> div> form> label> img{
+	width: 20px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	margin: 0;
+}
+
+#wrapper> section> div> form> input{
+	width: 85%;
+	box-sizing: border-box;
+	margin: 5px 0;
+	padding: 7px 10px;
+	border-radius: 0 8px 8px 0;
+	vertical-align: middle;
+}
+
+#wrapper> section> div> form> button{
+	background-color: rgba(61, 139, 88, 0.6);
+	width: 95%;
+	box-sizing: border-box;
+	margin: 5px 0;
+	padding: 7px;
+	border-radius: 8px;
+}
+
+#wrapper> section> div> form> *{
+	display: inline-block;
+	color: #DEB887;
+	font-size: 20px;
+	border: none;
+}
+
+#wrapper> section> div> form> button:hover{
+	background-color: rgba(74, 90, 8, 0.6);
+	cursor: pointer;
+}

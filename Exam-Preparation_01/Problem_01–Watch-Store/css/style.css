@@ -1,0 +1,102 @@
+@font-face{
+	font-family: Lemon-Regular;
+	src: url('../font/Lemon-Regular.ttf'); 
+}
+
+body>*{
+	font-family: Lemon-Regular, Arial;
+	margin: 0;	
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#wrapper{
+	width: 1000px;
+	height: auto;
+	background: #602D75;
+	margin: auto;
+	padding: 20px;
+}
+
+#wrapper section{
+	width: 900px;
+	height: auto;
+	margin: auto;
+	background: #FFAE32;
+	border-radius: 20px;
+}
+
+section article{
+	width: 220px;
+	display: inline-block;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	padding-top: 8px;
+	background: #5F2056;
+	border-radius: 27px 5px;
+	font-size: 15px;
+	color: #fff;	
+}
+
+
+section .firstArticle{
+	margin-left: 100px;
+}
+
+section header h1{
+	font-size: 24px;
+}
+
+article h2{
+	font-size: 22px;
+}
+
+article p{
+	margin-left: 5px;
+	margin-bottom: 0;
+	margin-top: 4px;
+}
+
+section header, article h2, article .firstLine{
+	text-align: center;
+	margin: 4px;
+}
+
+article .firstLine{
+	color: #FFC350;
+}
+
+article>div{
+	width: 180px;
+	border-radius: 50%;
+	margin: auto;
+	padding: 0;
+}
+
+article  div img{
+	width: 100%;
+	border: solid 4px #806671;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+article button{
+	font-family: Lemon-Regular, Arial;
+	font-size: 15px;
+	color: #A274FF;
+	width: 204px;
+	margin: 8px;
+	border-radius: 15px;
+}
+
+article  div img:hover{
+	cursor: pointer;
+	border-color: #FA4F00;
+}
+
+article button:hover{
+	cursor: pointer;
+	color: black;
+}

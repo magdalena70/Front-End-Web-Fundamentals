@@ -1,0 +1,33 @@
+
+#content {
+	width:950px;
+	height:580px;
+	background-color:#B0DEEB;
+	margin:auto;
+	padding:15px;
+	font-family:Ariel;
+}
+
+h1 {
+	font-size:2.5em;
+}
+
+h2 {
+	font-size:1.9em;
+}
+
+a {
+	color:#684DA4;
+}
+
+ul li {
+	font-size:1.1em;
+}
+
+#italic >li {
+	font-style:italic;
+}
+
+#italic , .nested-italic {
+	list-style-type:none;
+}

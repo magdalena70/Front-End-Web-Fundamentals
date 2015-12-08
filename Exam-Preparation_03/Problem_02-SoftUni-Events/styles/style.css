@@ -1,0 +1,132 @@
+﻿@font-face{
+    font-family: LDFComicSans;
+    src: url('../resources/LDFComicSans.ttf');
+}
+
+@font-face{
+    font-family: ThisNight;
+    src: url('../resources/ThisNight.ttf');
+}
+
+body, header, h1, nav, ul, li, a, section, article, div, img, p, dfn {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: LDFComicSans, Arial, sans-serif;
+}
+
+    body a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    body> header{
+        font-family: ThisNight, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    body nav ul li{
+        display: inline-block;
+        list-style: none;
+    }
+
+        body> header> h1{
+            background-color: #234465;
+            font-size: 120px;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+            body> header> h1> a:hover{
+                color: #FF9C00;
+            }
+
+        body> header> nav> ul li{
+            margin: 10px;
+        }
+
+        body> header> nav> ul li a{
+            color: #234465;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+            body > header > nav > ul li .selected {
+                background-color: #234465;
+                color: #fff;
+            }
+
+            body > header > nav > ul li a:hover, body > header > nav > ul li a:focus {
+                color: #FF9C00;
+            }
+
+    body> section{
+        width: 960px;
+        margin: 0 auto;
+    }
+
+        body> section article{
+            display: inline-block;
+            width: 440px;
+            margin: 15px;
+            padding: 0 5px 5px 5px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px #234465;
+        }
+
+            body> section article> header> h2{
+                background-color: #234465;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                font-size: 35px;
+                text-shadow: 4px 4px 5px #FF9C00;
+            }
+
+
+            body> section article> div{
+                width: 420px;
+            }
+
+                body> section article> div> img{
+                    width: 100%;
+                }
+
+            body> section article p{
+                margin: 10px 0;
+            }
+
+    body> footer{
+        background-color: #234465;
+        padding: 10px 10px 70px 10px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+        body> footer> nav{
+            margin-bottom: 30px;
+            padding: 15px 20px 20px 20px;
+            border-bottom: solid 1px #fff;
+        }
+
+            body> footer> nav> ul li{
+                margin: 5px;
+            }
+
+                body> footer> nav> ul li a{
+                    padding: 10px 15px;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                    body> footer> nav> ul li a:first-child:hover{
+                        background-color: #FF9C00;
+                        color: #234465;
+                    }
+
+                    body> footer a:last-child:hover{
+                        color: #FF9C00;
+                    }

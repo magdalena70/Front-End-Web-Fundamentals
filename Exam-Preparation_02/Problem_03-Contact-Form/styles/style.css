@@ -1,0 +1,102 @@
+﻿@font-face{
+	font-family: Yanone;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../resources/yanonekaffeesatz-regular-webfont.ttf'); 
+}
+
+body, div, h1, form, h2, label, textarea, input{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../resources/form-background.png');
+    background-repeat: repeat;
+    font-size: 17px;
+}
+
+body> #wrapper div:first-child{
+    font-family: Yanone, Arial, sans-serif;
+    color: gray;
+    width: 60%;
+    margin: 0 auto;
+    background-image: url('../resources/envelope-top.png');
+    background-repeat: no-repeat;
+   background-position: center bottom;
+}
+
+    #wrapper div:first-child h1{
+        text-align: center;
+        padding: 20px;
+        font-size: 60px;
+    }
+
+    #wrapper div:first-child form{
+        background-image: url('../resources/letter-background.png');
+        background-repeat: repeat;
+        width: 55%;
+        height: auto;
+        margin: 0 auto;
+        padding: 30px 30px 50px 30px;
+    }
+
+        #wrapper div:first-child form h2{
+            font-weight: normal;
+        }
+
+        #wrapper div:first-child form label{
+            text-transform: uppercase;
+        }
+
+        #wrapper div:first-child form input,
+        #wrapper div:first-child form textarea{
+            padding: 10px;
+            border: solid 1px #d4caca;
+            background-color: transparent;
+            outline: none;
+        }
+
+        #wrapper div:first-child form textarea,
+        #wrapper div:first-child form input[type=text],
+        #wrapper div:first-child form input[type=email]{
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        #wrapper div:first-child form input[type=submit]{
+            margin: 0 30%;
+            font-family: Yanone, Arial, sans-serif;
+            color: gray;
+            text-transform: capitalize;
+            font-size: 22px;
+            border: none;
+        }
+
+body> #wrapper div:last-child{
+    width: 60%;
+    height: 250px;
+    margin: 0 auto;
+    background-image: url('../resources/envelope-bottom.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: -130px;
+}
+
+body> #wrapper div:first-child form input[type=text]:focus,
+body> #wrapper div:first-child form input[type=email]:focus,
+body> #wrapper div:first-child form textarea:focus{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+body> #wrapper div:first-child form input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #BBC9CF;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/*http://jigsaw.w3.org/css-validator/#validate_by_input*/

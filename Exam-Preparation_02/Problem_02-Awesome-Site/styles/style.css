@@ -1,0 +1,142 @@
+﻿/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(http://fonts.gstatic.com/s/nunito/v7/cSNs3NwpEgPVRQzvkh3NeQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(http://fonts.gstatic.com/s/nunito/v7/TttUCfJ272GBgSKaOaD7KltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face{
+	font-family: Fairview;
+	src: url('../resources/Fairview_Regular.otf'); 
+}
+
+body, header, h1, main, footer, table, tr, thead, th, tbody, td, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body> main, body> footer{
+    font-size: 17px;
+}
+
+body a{
+    text-decoration: none;
+}
+
+body> header nav ul li, body> footer nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 1px;
+}
+
+    body> header nav ul li a, body> footer nav ul li a{
+        color: #666666;
+        font-weight: bold;
+        padding: 6px 10px;
+    }
+
+body> header{
+    width: 100%;
+    margin:  0 auto;
+    font-family: Fairview, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+    body> header> h1{
+        font-size: 120px;
+        background-color: #E05E43;
+        padding: 10px;
+    }
+
+        body> header> h1> a{
+            color: #FFFFFF;
+        }
+
+    body> header> nav> ul li a{
+        font-size: 29px;
+    }
+
+    body> header> nav> ul> li> .selected{
+        background-color: #E05E43;
+        color: #fff;
+    }
+
+        body> header a:hover,
+        body> header> nav> ul li a:focus,
+        body> header> nav> ul> li> .selected:hover{
+            color: #000000;
+        }
+
+body> main{
+    width: 670px;
+    margin: 0 auto;
+    padding: 10px 60px;
+    font-family: Nunito, Helvetica, sans-serif;
+    color: #111111;
+}
+
+    body> main table{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        line-height: 45px;
+    }
+
+        body> main table> thead> tr> .title{
+            border-bottom: solid 1px #AAAAAA;
+        }
+
+        body> main table tbody tr td a{
+            color: #111111;
+            border-bottom: dotted 1px #E05E43;
+            color: #E05E43;
+        }
+
+            body> main table tbody tr td a:hover,
+            body> main table tbody tr td a:focus{
+                border-bottom: solid 1px #E05E43;
+                color: #000000;
+            }
+
+body> footer{
+    font-family: Nunito, Arial, sans-serif;
+    width: 98%;
+    margin: 0 auto;
+    background-color: #111111;
+    text-align: center;
+    padding: 10px;
+}
+
+    body> footer a{
+        color: #666666;
+    }
+
+            body> footer a:hover{
+                color: #AAAAAA;
+            }
+
+        body> footer a:nth-child(3) p{
+            margin-top: 40px;   
+        }
+
+    body> footer> nav{
+        border-bottom: solid 1px #666666;
+        margin: 0 20px 20px 20px;
+    } 
+
+            body> footer> nav> ul li a:hover{
+                background-color: #666666;
+                color: #E05E43;
+            }

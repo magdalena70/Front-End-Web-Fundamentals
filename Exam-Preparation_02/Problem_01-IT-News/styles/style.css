@@ -1,0 +1,46 @@
+﻿body, section, article, header, h2, img, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Verdana, Arial, Helvetica;
+    font-size: 13px;
+}
+
+body section, body section article{
+    border: solid 1px #cbcbcb;
+}
+
+body section{
+    width: 600px;
+    margin: auto;
+    padding-left: 5px;
+}
+
+body section article{
+    width: 280px;
+    height: 280px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 8px #808080;
+}
+
+section article .date{
+    font-size: 10px;
+    color: #808080;
+}
+
+section article p img{
+    float: left;
+    margin: 5px;
+}
+
+article header a{
+    text-decoration: none;
+    color: black;
+}
+
+article header a:hover{
+    text-decoration: underline;
+}

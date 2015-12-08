@@ -1,0 +1,86 @@
+﻿@font-face{
+    font-family: OpenSans-ExtraBold, sans-serif;
+    src: url('../resources/OpenSans-ExtraBold.ttf');
+}
+
+body, section, header, h1, h2 article, h3, p{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0F0E8;
+    font-family: OpenSans-ExtraBold, Helvetica, sans-serif;
+    color: #7F8287;
+    text-align: center;
+    font-size: 16px;
+}
+
+        body> header> h1, body> header> h2, body> section article header h3{
+            text-shadow: 3px 3px 2px #fff;
+        }
+
+        body> header> h1{
+            font-family: OpenSans-ExtraBold, sans-serif;
+            color: #009288;
+            font-size: 56px;
+            margin: 30px auto 50px auto;
+        }
+
+        body> header> h2{
+            font-family: OpenSans-ExtraBold;
+            font-size: 30px;
+        }
+
+        body> header> p{
+            font-family: OpenSans-ExtraBold;
+           font-size: 20px;
+           margin: 25px 30px;
+        }
+
+        body> section article{
+            font-family: OpenSans-ExtraBold;
+            width: 210px;
+            height: 220px;
+            display: inline-block;
+            margin: 0 25px;
+            padding: 0 5px;
+            line-height: 40px;
+            box-shadow: -10px 0 transparent;
+        }
+
+                body> section article:hover{
+                    cursor: pointer;
+                    background-color: #F6F6F5;
+                    box-shadow: -10px 0 #009288;
+                }
+
+            body > section article header #logo-img-01 {
+                width: 42px;
+                height: 42px;
+                margin: auto;
+                background-image: url('../resources/globus.png');
+            }
+
+            body > section article header #logo-img-02 {
+                width: 42px;
+                height: 42px;
+                margin: auto;
+                background-image: url('../resources/magnifier.png');
+            }
+
+            body > section article header #logo-img-03 {
+                width: 42px;
+                height: 42px;
+                margin: auto;
+                background-image: url('../resources/alarm-clock..png');
+            }
+
+            body > section article header #logo-img-04 {
+                width: 42px;
+                height: 42px;
+                margin: auto;
+                background-image: url('../resources/graph.png');
+            }

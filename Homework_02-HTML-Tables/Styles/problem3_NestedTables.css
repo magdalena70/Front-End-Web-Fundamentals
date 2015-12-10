@@ -1,0 +1,28 @@
+body {
+	font-family: Tahoma, sans serif;
+	font-size: 16px;
+	color: #777777;
+}
+
+body #big-table {
+	width: 300px;
+	margin: 50px auto;
+	border: solid 1px #CCCCCC;
+	text-align: center;
+}
+
+body #big-table tr td {
+	border: solid 1px #CCCCCC;
+	padding: 10px;
+}
+
+body #big-table tr td #nested-table{
+	border: solid 1px #CCCCCC;
+	font-size: 60px;
+	margin: 2px;
+}
+
+body #big-table tr td #nested-table tr td{
+	border: solid 1px  #CCCCCC;
+	text-align: left;
+}

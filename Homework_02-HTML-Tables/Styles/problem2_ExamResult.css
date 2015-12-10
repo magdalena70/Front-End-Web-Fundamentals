@@ -1,0 +1,29 @@
+body {
+	font-family: Tahoma;
+	font-size: 16px;
+	color: #777777;
+}
+
+body table {
+	width: 30%;
+	border: solid 1px #CCCCCC;
+	margin: 50px auto;
+}
+
+		body table thead tr th, body table tbody tr td, body table tfoot tr td {
+		border: solid 1px #CCCCCC;
+		padding: 5px;
+		}
+
+		body table thead tr th {
+			font-size: 23px;
+		}
+
+	body table tbody tr:nth-child(1){
+		font-weight: bold;
+		text-align: center;
+	}
+
+		body table tfoot tr td {
+			text-align: right;
+		}

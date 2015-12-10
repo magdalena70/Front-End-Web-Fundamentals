@@ -1,0 +1,79 @@
+﻿body, section, article, div, img, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body> section{
+    width: 460px;
+    height: 260px;
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #697073;
+}
+
+    body> section article{
+        width: 145px;
+        height: 260px;
+        margin: 0 2px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 22px;
+    }
+
+        body> section article .image{
+            width: 135px;
+            height: 135px;
+            border: solid 1px #DADEE4;
+            margin: 5px 0;
+        }
+
+            body> section article .image img{
+                width: 100%;
+            }   
+
+                body> section article .image img:hover,
+                body> section article .title:hover{
+                    cursor: pointer;
+                }
+
+        body> section article .title{
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+        body> section article .price{
+            color: #8F0509;
+            font-weight: bold;
+        }
+
+        body> section article:nth-child(2) .price{
+            padding-bottom: 23px;
+        }
+
+        body> section article .btn{
+            vertical-align: bottom;
+        }
+
+        body> section article .btn> button{
+            background-image: url('../resources/shopping-cart-inactive.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+            width: 80%;
+            font-size: 10px;
+            color: #697073;
+            padding: 3px 5px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+            body> section article .btn> button:hover,
+            body> section article .btn button:focus{
+                background-image: url('../resources/shopping-cart-active.png');
+                background-repeat: no-repeat;
+                background-position: left center;
+                cursor: pointer;
+                color: #000000;
+            }
+

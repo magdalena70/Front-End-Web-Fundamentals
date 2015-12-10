@@ -1,0 +1,124 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+table {
+	width: 100%;
+	height: 110px;
+	background: #234465;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+	table .logo{
+		width: 120px;
+		height: 108px;
+	}
+	
+	
+	table .message-box {
+			padding-top:13px;
+			text-align: right;
+		}
+
+			table .message-box a {
+				padding: 5px 0;
+				color: #fff;
+				font-size: 16px;
+				font-weight: bold;
+				text-decoration: none;
+				vertical-align: middle;
+			}
+			
+				table .message-box a img, table .message-box a .message-count{
+					vertical-align: middle;
+				}
+			
+					table .message-box a:hover,
+					table .message-box a .message-count:hover{
+						color: #FCC509;
+						text-decoration: underline;
+					}
+	
+
+	table .search-form{
+		padding-left: 0;
+	}
+
+		table .search-form  form  {
+			width: 450px;
+			padding: 0;
+		}
+
+			table .search-form  form input {
+				width: 268px;
+				height: 26px;
+				padding: 4px;
+				font-size: 16px;
+				color: #CCCCCC;
+				padding-left: 10px;
+				border: solid 1px #CCCCCC;
+				border-bottom-left-radius: 10px;
+				border-top-left-radius: 10px;
+				outline: none;
+				margin-right: 0;
+			}
+			
+					table .search-form  form input:focus{
+						background-color: #E1E7F0;
+						border: solid 1px #35A2FF;
+						color: #000;
+					}
+
+			table .search-form  form a {
+				color: #fff;
+				text-decoration: none;
+				padding-right: 4px;
+			}
+
+				table .search-form  form a:hover {
+					color: #FCC509;
+					text-decoration: underline;
+				}
+
+			table .search-form form button[type="submit"] {
+				width: 36px;
+				height: 36px;
+				margin-top: 20px;
+				padding: 12px;
+				border: solid 1px #CCCCCC;
+				border-left: none;
+				border-bottom-right-radius: 10px;
+				border-top-right-radius: 10px;
+				background-image: url('../Images/search.PNG');
+				background-repeat: no-repeat;
+				background-position: center center;
+				outline: none;
+			}
+			
+					table .search-form form button[type="submit"]:hover{
+						border: solid 1px #35A2FF;
+						cursor: pointer;
+					}
+					
+
+			table .nav-bar td{
+				padding-bottom: 15px;
+				width: 100px;
+			}
+
+				table .nav-bar td a {
+					color: #fff;
+					text-decoration: none;
+					padding: 10px;
+					border-radius: 10px;
+				}
+
+					table .nav-bar td a:hover {
+						background: #4CA0DB;
+					}

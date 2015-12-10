@@ -1,0 +1,36 @@
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+table {
+	width: 400px;
+	height: auto;
+	border: solid 1px black;
+	margin: auto;
+}
+
+	table thead tr th , table tbody tr td{
+		border: solid 1px black;
+		width: 100px;
+		height: 100px;
+	}
+
+	table input {
+		width: 98%;
+		height: 98%;
+		font-size: 35px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		
+		background: -webkit-linear-gradient( #EEEEEE, #BBBBBB);
+		background: -o-linear-gradient( #EEEEEE, #BBBBBB);
+		background: -moz-linear-gradient( #EEEEEE, #BBBBBB);	
+		background: linear-gradient( #EEEEEE, #BBBBBB);
+	}
+
+		table thead th input {
+			background: white;
+			padding: 6px;
+		}

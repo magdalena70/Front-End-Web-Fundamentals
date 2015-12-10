@@ -1,0 +1,181 @@
+﻿@font-face{
+    font-family: Glyphicons;
+    src: url('../resources/glyphicons-halflings-regular.ttf');
+}
+
+body, div, form, h1, input, label, button {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input{
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+    body> #wrapper{
+        width: 75%;
+        margin: auto;
+        background: url('../resources/blurred-green-background.jpg') fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 90px 0;
+    }
+
+        body> #wrapper> #login-form{
+            width: 350px;
+            height: 265px;
+            margin: 0 auto 15px auto;
+            background-color: #EEF7F4;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+            body> #wrapper> #login-form> h1{
+                background-color: #93D55C;
+                padding: 10px;
+                font-size: 20px;
+                font-weight: normal;
+                color: #EEF7F4;
+                text-align: center;
+                margin-bottom: 20px;
+                border-radius: 10px 10px 0 0;
+            }
+
+            body> #wrapper> #login-form label{
+                display: inline-block;
+                background-color: #EEEEEE;
+                margin: 10px 0 10px 14px;
+                border: solid 1px #CCCCCC;
+                border-right: none;
+                border-radius: 8px 0 0 8px;
+                vertical-align: middle;
+            }
+
+                body> #wrapper> #login-form label[for="email"]:before{
+                    font-family: Glyphicons;
+                    content: "\e008";
+                    color: #555555;
+                    display: block;
+                    padding: 7px;
+                }
+
+                body> #wrapper> #login-form label[for="pass"]:before{
+                    font-family: Glyphicons;
+                    content: "\e033";
+                    color: #555555;
+                    display: block;
+                    padding: 7px;
+                }
+
+            body> #wrapper> #login-form input[type=email],
+            body> #wrapper> #login-form input[type=password]{
+                width: 290px;
+                display: inline-block;
+                padding: 8px 7px 7px 7px;
+                background-color: #FFFFF1;
+                border: solid 1px #CCCCCC;
+                border-radius: 0 8px 8px 0;
+                margin: 10px 14px 10px 0;
+                font-size: 16px;
+                color: #555555;
+                vertical-align: middle;
+                outline: none;
+            }
+
+                body > #wrapper > #login-form input[type=email]:focus,
+                body > #wrapper > #login-form input[type=password]:focus {
+                    border: solid 1px #66AFE9;
+                    background-color: #FFFFFF;
+                }
+
+            body> #wrapper> #login-form input[type=submit]{
+                width: 321px;
+                display: inline-block;
+                padding: 7px;
+                background-color: #5CB85C;
+                border: solid 1px #4CAE4C;
+                box-shadow: 1px 5px 5px #229E22;
+                border-radius: 8px;
+                margin: 16px 14px;
+                font-size: 16px;
+                color: #FFF3C1;
+                vertical-align: middle;
+            }
+
+                body > #wrapper > #login-form input[type=submit]:hover {
+                    background-color: #449D44;
+                    border: solid 1px #398439;
+                    box-shadow: 1px 5px 5px #229E22;
+                    color: #E1FFFF;
+                    cursor: pointer;
+                }
+
+        body> #wrapper> #search-form{
+            width: 350px;
+            height: 34px;
+            margin: 30px auto 50px auto;
+        }
+
+            body> #wrapper> #search-form> input[type=search]{
+                width: 230px;
+                padding: 8px;
+                display: inline-block;
+                background-color: #FFFFF1;
+                border: solid 1px #CCCCCC;
+                border-radius: 8px 0 0 8px;
+                border-right: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color: #555555;
+                outline: none;
+            }
+
+            body> #wrapper> #search-form> input[type="search"]::-webkit-search-decoration,
+            body> #wrapper> #search-form> input[type="search"]::-webkit-search-cancel-button,
+            body> #wrapper> #search-form> input[type="search"]::-webkit-search-results-button,
+            body> #wrapper> #search-form> input[type="search"]::-webkit-search-results-decoration {
+                display: none;
+            }
+
+                body > #wrapper > #search-form input[type=search]:focus {
+                    border: solid 1px #66AFE9;
+                    background-color: #FFFFFF;
+                }
+
+            body> #wrapper> #search-form> button{
+                width: 118px;
+                padding: 6px 0;
+                background-color: #5CB85C;
+                display: inline-block;
+                border: solid 1px #4CAE4C;
+                border-radius: 0 8px 8px 0;
+                font-size: 17px;
+                color: #FFF3C1;
+            }
+
+                body> #wrapper> #search-form button:before{
+                    font-family: Glyphicons;
+                    content: "\e003";
+                    font-size: 13px;
+                    color: #FFF3C1;
+                    display: inline-block;
+                    padding: 0 7px;
+                }
+
+            body > #wrapper > #search-form button:hover {
+                background-color: #449D44;
+                border: 1px solid #398439;
+            }

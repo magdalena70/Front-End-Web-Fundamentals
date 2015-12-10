@@ -1,0 +1,189 @@
+body {
+	font-size: 20px;
+	font-family: Tahoma;
+}
+
+#wrapper {
+	background: #00923E;
+	margin: auto;
+	width: 1200px;
+	height: 450px;
+	padding-top: 15px;
+}
+
+	#wrapper table {
+		width: 95%;
+		height: 90%;
+		border: solid 1px #000;
+		border-radius: 10px;
+		margin: 10px auto;
+		border-spacing: 0;
+	}
+
+		#wrapper table tr td  {
+			font-size: 20px;
+			padding: 10px;
+			text-align: center;
+			border: solid 1px #000;
+			border-spacing: 0;
+		}
+		
+			#wrapper table #header {
+				background: #F8C711;
+				font-weight: bold;
+			}
+
+				#wrapper table  #header  td:nth-child(1){
+					border-top-left-radius: 10px;
+				}
+
+				#wrapper table #header td:nth-child(5){
+					border-top-right-radius: 10px;
+				}
+
+			#wrapper table tr:last-child td:nth-child(1){
+				border-bottom-left-radius: 10px;
+			}
+
+			#wrapper table tr:last-child td:nth-child(8){
+				border-bottom-right-radius: 10px;
+			}
+
+			#wrapper table .white-row {
+				background: #fff;
+			}
+
+			#wrapper table .gray-row {
+				background: #C8C8C8;
+			}
+
+				#wrapper table tr .right {
+					text-align: right;
+				}
+
+				#wrapper table tr .left {
+					text-align: left;
+				}
+				
+					#wrapper table .white-row .right #img_Brasil {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Brasil.PNG');
+						float: right;
+					}
+
+					#wrapper table .white-row .left #img_Mexico {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Mexico.PNG');
+						float: left;
+					}
+
+					#wrapper table .gray-row .right #img_Spain {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Spain.PNG');
+						float: right;
+					}
+
+					#wrapper table .gray-row .left #img_Netherlands {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Netherlands.PNG');
+						float: left;
+					}
+
+					#wrapper table .white-row .right #img_Italy {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Italy.PNG');
+						float: right;
+					}
+
+					#wrapper table .white-row .left #img_England {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/England.PNG');
+						float: left;
+					}
+
+					#wrapper table .gray-row .right #img_Argentina {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Argentina.PNG');
+						float: right;
+					}
+
+					#wrapper table .gray-row .left #img_Bosnia {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Bosnia.PNG');
+						float: left;
+					}
+
+					#wrapper table .white-row .right #img_Germany {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Germany.PNG');
+						float: right;
+					}
+
+					#wrapper table .white-row .left #img_Portugal {
+						width: 33px;
+						height: 23px;
+						background-image: url('../images/Portugal.PNG');
+						float: left;
+					}
+
+			#wrapper table .bet-red {
+			width: 47px;
+			height: 47px;
+			background-color: #FF0D2E;
+			color: #fff;
+			font-weight: bold;
+			border-radius: 50%;
+			outline: none;
+			}
+
+			#wrapper table .bet-green {
+				width: 47px;
+				height: 47px;
+				background-color: #007600;
+				color: #fff;
+				font-weight: bold;
+				border-radius: 50%;
+				outline: none;
+			}
+			
+				#wrapper table input[type=submit]:hover,
+				#wrapper table input[type=submit]:focus{
+					cursor: pointer;
+					background-color: #F8C711;
+					color: #000;
+				}
+
+			#wrapper table .disabled input[type=number] {
+				width: 28px;
+				height: 28px;
+				background-color: #DCDCDC;
+				color: #FF0D2E;
+				font-size: 18px;
+				padding: 5px;
+				border: solid 2px #C8C8C8;
+			}
+
+			#wrapper table .enabled input[type=number] {
+				width: 28px;
+				height: 28px;
+				color: #007600;
+				font-size: 18px;
+				padding: 5px;
+				border: solid 2px #C8C8C8;
+			}
+
+					#wrapper table .disabled input[type=number]:focus,{
+					#wrapper table .enabled input[type=number]:focus {
+						background-color: #fff;
+						border: solid 1px #35A2FF;
+					}
+					

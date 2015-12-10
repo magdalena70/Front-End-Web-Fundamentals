@@ -1,0 +1,77 @@
+body{
+	font-family: Tahoma;
+	font-size: 16px;
+}
+
+#big-table {
+	border: solid 1px gray;
+	margin: 50px auto;
+	width: 470px;
+	height: auto;
+	background: rgba(238, 238, 238, 0.2);
+}
+
+	#big-table button{
+		width: 100%;
+		font-size: 17px;
+		font-weight: bolt;
+		text-align: center;
+		padding: 30px 10px;
+		color: blue;
+		
+		background: -webkit-linear-gradient( #EEEEEE, #BBBBBB);
+		background: -o-linear-gradient( #EEEEEE, #BBBBBB);
+		background: -moz-linear-gradient( #EEEEEE, #BBBBBB);
+		background: linear-gradient( #EEEEEE, #BBBBBB);
+	}
+	
+		#big-table thead tr th, #big-table tbody tr td  {
+			border: solid 1px gray;
+			padding: 4px;
+		}
+
+		#big-table thead th button{
+			font-size: 30px;
+			padding: 18px;
+			border: solid 1px gray;
+		}
+
+			#big-table button:hover, #nested-table button:hover {
+				background: -webkit-linear-gradient( #BBBBBB, #EEEEEE);
+				background: -o-linear-gradient( #BBBBBB, #EEEEEE);
+				background: -moz-linear-gradient( #BBBBBB, #EEEEEE);
+				background: linear-gradient( #BBBBBB, #EEEEEE);
+			
+				color: #fff;
+				cursor:pointer;
+			}
+
+	#big-table .Google, #big-table .GitHub, #big-table .game {
+		width: 50%;
+	}
+
+	#big-table .FB, #big-table .GMail, #big-table .YouTube, #big-table .food {
+		width: 25%;
+	}
+		
+		#big-table .beer button{
+			font-size: 27px;
+			text-align: right;
+			padding: 25px 5px;
+		}
+		
+		#big-table .wc button {
+			font-size: 19px;
+			padding: 30px 0;
+		}
+		
+
+	#big-table #nested-table {
+		width: 100%;
+	}
+
+		#big-table #nested-table  button{
+			font-size: 12px;
+			text-align: center;
+			padding: 6px;
+		}

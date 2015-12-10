@@ -1,0 +1,192 @@
+﻿body, div, main, header, h1, section, article, aside, p, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body> #wrapper{
+    width: 920px;
+    margin: auto;
+}
+
+    body> #wrapper> header{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #EEEEEE;
+        padding: 25px;
+    }
+
+
+    body> #wrapper nav ul li{
+        display: inline-block;
+        list-style: none;
+    }
+
+        body> #wrapper nav ul li a{
+            text-decoration: none;
+        }
+
+
+    body> #wrapper> header> div{
+        display: inline-block;
+        width: 15%;
+        vertical-align: middle;
+    }
+
+    body> #wrapper> header> nav{
+        display: inline-block;
+        vertical-align: middle;
+        width: 80%;
+    }
+
+        body> #wrapper> header> nav> ul li{
+            margin: 0 20px;
+        }
+
+            body> #wrapper> header> nav> ul li a{
+                color: #818181;
+                font-weight: bold;
+                padding: 15px;
+                border-radius: 10px;
+            }
+
+            body> #wrapper> header> nav> ul li> .selected{
+                color: #F99600;
+            }
+
+                body> #wrapper> header> nav> ul li a:hover,
+                body> #wrapper> header> nav> ul li a:focus{
+                    background-color: #C9D0D0;
+                    cursor: pointer;
+                }
+
+            body> #wrapper> main{
+                width: 840px;
+                margin: 0 auto;
+            }
+
+                body> #wrapper> main> header{
+                    padding: 20px 20px 0 20px;
+                }
+
+                    body> #wrapper> main> header> h1{
+                        font-weight: normal;
+                        color: #3E3E3E;
+                        padding-top: 20px;
+                    }
+
+                body> #wrapper> main> section{
+                    width: 50%;
+                    display: inline-block;
+                    margin: 10px;
+                    vertical-align: top;
+                }
+
+                body> #wrapper> main> aside{
+                    width: 40%;
+                    display: inline-block;
+                    margin: 10px;
+                    vertical-align: top;
+                }
+
+                body> #wrapper> main article{
+                    margin: 30px 10px;
+                    color: #585858;
+                }
+
+        body> #wrapper> footer{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #EEEEEE;
+        padding: 10px;
+    }
+
+            body> #wrapper> footer> p{
+                font-size: 12px;
+                color: #585858;
+                width: 58%;
+                display: inline-block;
+                margin: 20px;
+                vertical-align: middle;
+            }
+
+            body> #wrapper> footer> nav{
+                width: 30%;
+                display: inline-block;
+                margin: 20px;
+                vertical-align: middle;
+            }
+
+                body> #wrapper> footer> nav> ul li #facebook{
+                    background-image: url('../resources/icons.png');
+                    background-repeat: no-repeat;
+                    background-position: left 0;
+                    margin: 5px;
+                    padding: 5px 15px;
+                }
+                
+
+                    body> #wrapper> footer> nav> ul li #facebook:hover,
+                    body> #wrapper> footer> nav> ul li #facebook:focus{
+                        background-image: url('../resources/icons.png');
+                        background-repeat: no-repeat;
+                        background-position: right 0;
+                        cursor: pointer;
+                    }
+            
+
+                body> #wrapper> footer> nav> ul li #google{
+                    background-image: url('../resources/icons.png');
+                    background-repeat: no-repeat;
+                    background-position: left -40px;
+                    margin: 5px;
+                    padding: 5px 15px;
+                }
+
+
+                    body> #wrapper> footer> nav> ul li #google:hover,
+                    body> #wrapper> footer> nav> ul li #google:focus{
+                        background-image: url('../resources/icons.png');
+                        background-repeat: no-repeat;
+                        background-position: right -40px;
+                        cursor: pointer;
+                    }
+
+                body> #wrapper> footer> nav> ul li #twitter{
+                    background-image: url('../resources/icons.png');
+                    background-repeat: no-repeat;
+                    background-position: left -80px;
+                    margin: 5px;
+                    padding: 5px 15px;
+                }
+
+                    body> #wrapper> footer> nav> ul li #twitter:hover,
+                    body> #wrapper> footer> nav> ul li #twitter:focus{
+                        background-image: url('../resources/icons.png');
+                        background-repeat: no-repeat;
+                        background-position: right -80px;
+                        cursor: pointer;
+                    }
+            
+
+                body> #wrapper> footer> nav> ul li #t{
+                    background-image: url('../resources/icons.png');
+                    background-repeat: no-repeat;
+                    background-position: left -120px;
+                    margin: 5px;
+                    padding: 5px 15px;
+                }
+
+                
+                    body> #wrapper> footer> nav> ul li #t:hover,
+                    body> #wrapper> footer> nav> ul li #t:focus{
+                        background-image: url('../resources/icons.png');
+                        background-repeat: no-repeat;
+                        background-position: right -120px;
+                        cursor: pointer;
+                    }

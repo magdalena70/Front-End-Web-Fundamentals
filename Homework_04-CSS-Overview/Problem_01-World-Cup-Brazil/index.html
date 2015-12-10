@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>World Cup Brazil</title>
+		<meta charset="UTF-8">
+		<link href="styles/style.css" rel="stylesheet" type="text/css"/>
+	</head>	
+	<body>
+		<div id="wrapper">
+			<table>
+				<tr id="header">
+					<td class="right">Country</td>
+					<td>Result</td>
+					<td class="left">Country</td>
+					<td>Group</td>
+					<td colspan="4">Place A Bet</td>
+				</tr>
+				<tr class="white-row">				
+					<td class="right">Brasil<div id="img_Brasil"></div></td>
+					<td>1 - 3</td>
+					<td class="left"><div id="img_Mexico"></div>Mexico</td>
+					<td>A</td>
+					<td class="right">Brasil</td>
+					<td class="disabled">
+						<input type="number" value="0" min=0 max=10 name="team_1" /> -
+						<input type="number" value="0" min=0 max=10 name="team_2" />
+					</td>
+					<td class="left">Mexico</td>
+					<td>
+						<input type="submit" value="BET" class="bet-red" disabled="disabled" />
+					</td>			
+				</tr>				
+				<tr class="gray-row">					
+					<td class="right">Spain<div id="img_Spain"></div></td>
+					<td>1 - 5</td>
+					<td class="left"><div id="img_Netherlands"></div>Netherlands</td>
+					<td>B</td>
+					<td class="right">Spain</td>
+					<td class="disabled">
+						<input type="number" value="0" min=0 max=10 name="team_1" /> -
+						<input type="number" value="0" min=0 max=10 name="team_2" />
+					</td>
+					<td class="left">Netherlands</td>
+					<td>
+						<input type="submit" value="BET" class="bet-red" disabled="disabled" />
+					</td>			
+				</tr>				
+				<tr class="white-row">					
+					<td class="right">Italy<div id="img_Italy"></div></td>
+					<td>2 - 1</td>
+					<td class="left"><div id="img_England"></div>England</td>
+					<td>C</td>
+					<td class="right">Italy</td>
+					<td class="disabled">
+						<input type="number" value="0" min=0 max=10 name="team_1" /> -
+						<input type="number" value="0" min=0 max=10 name="team_2" />
+					</td>
+					<td class="left">England</td>
+					<td>
+						<input type="submit" value="BET" class="bet-red" disabled="disabled" />
+					</td>			
+				</tr>				
+				<tr class="gray-row">				
+					<td class="right">Argentina<div id="img_Argentina"></div></td>
+					<td>-</td>
+					<td class="left"><div id="img_Bosnia"></div>Bosnia and Herz</td>
+					<td>F</td>
+					<td class="right">Argentina</td>
+					<td class="enabled">
+						<input type="number" value="0" min=0 max=10 name="team_1" /> -
+						<input type="number" value="0" min=0 max=10 name="team_2" />
+					</td>
+					<td class="left">Bosnia and Herz</td>
+					<td>
+						<input type="submit" value="BET" class="bet-green" />
+					</td>	
+				</tr>				
+				<tr class="white-row">					
+					<td class="right">Germany<div id="img_Germany"></div></td>
+					<td>-</td>
+					<td class="left"><div id="img_Portugal"></div>Portugal</td>
+					<td>E</td>
+					<td class="right">Germany</td>
+					<td class="enabled">
+						<input type="number" value="0" min=0 max=10 name="team_1" /> -
+						<input type="number" value="0" min=0 max=10 name="team_2" />
+					</td>
+					<td class="left">Portugal</td>
+					<td>
+						<input type="submit" value="BET" class="bet-green" />
+					</td>				
+				</tr>					
+			</table>
+		</div>
+	</body>
+</html>

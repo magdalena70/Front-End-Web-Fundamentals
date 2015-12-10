@@ -1,0 +1,5 @@
+C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_02-Lorem-Ipsum-Site\bin\Problem_02-Lorem-Ipsum-Site.dll.config
+C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_02-Lorem-Ipsum-Site\bin\Problem_02-Lorem-Ipsum-Site.dll
+C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_02-Lorem-Ipsum-Site\bin\Problem_02-Lorem-Ipsum-Site.pdb
+C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_02-Lorem-Ipsum-Site\obj\Debug\Problem_02-Lorem-Ipsum-Site.dll
+C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_02-Lorem-Ipsum-Site\obj\Debug\Problem_02-Lorem-Ipsum-Site.pdb

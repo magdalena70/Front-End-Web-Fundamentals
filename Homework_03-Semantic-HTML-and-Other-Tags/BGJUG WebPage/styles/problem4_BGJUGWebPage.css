@@ -1,0 +1,269 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body>* {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: Tahoma, sans-serif;
+}
+
+#wrapper {
+	width: 85%;
+	margin: 0.5em auto;
+	padding: 1.0em;
+}
+
+#wrapper a:hover {
+	text-decoration: underline;
+}
+
+header h1 {
+	font-size: 2.4em;
+	margin-bottom: 1.0em;
+	margin-left: 0.5em;
+}
+
+header nav {
+	width: 100%;
+}
+
+header nav ul li {
+	display: inline;
+	float: left;
+	margin-right: 5.0em;
+}
+
+header nav ul li a {
+	color: #B8B8B8;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header form input {
+	width: 16.0em;
+	height: 2.5em;
+	margin-left: 37.0em;
+	padding-left: 0.5em;
+	border: none;
+	border: solid 0.1em lightgray;
+	border-right: none;
+	vertical-align: middle;
+}
+
+header form button {
+	width: 2.5em;
+	height: 2.5em;
+	background-image: url(../resources/search.PNG);
+	margin-left: -0.4em;
+	border: none;
+	border: solid 0.1em lightgray;
+	border-left: none;
+	vertical-align: middle;
+}
+
+aside {
+	width: 20%;
+	float: left;
+	margin-top: 3.6em;
+	padding-right: 2.0em;
+}
+
+aside nav ul li {
+	display: block;
+	margin-bottom: 1.2em;
+}
+
+aside nav ul li a {
+	color: blue;
+	text-decoration: none;
+	line-height: 1.3em;
+	font-size: 1.1em;
+}
+
+aside label {
+	color: #B8B8B8;
+	text-transform: uppercase;
+}
+
+aside p{
+	color: #B8B8B8;
+	text-transform: uppercase;	
+	letter-spacing: 0.3em;
+}
+
+aside select {
+	font-size: 1.0em;
+	font-family: sans-serif;
+	margin-bottom: 1.5em;
+	margin-left: 0.5em;
+}
+
+article {
+	margin: 1.5em auto;
+	padding: 0 1.0em;
+}
+
+section {
+	width: 55%;
+	float: left;
+	margin: 1.5em;
+	margin-right: 2.0em;
+	line-height: 1.3em;
+}
+
+section article header {
+	margin-bottom: 1.0em;
+}
+
+section article header h2 {
+	font-size: 2.0em;
+	margin: 0.3em auto;
+}
+
+section article header span {
+	font-size: 0.8em;
+	color: #B8B8B8;
+}
+
+section article span a {
+	text-transform: uppercase;
+	color: #857B85;
+}
+
+section span time {
+	text-transform: uppercase;
+	color: #857B85;
+}
+
+section article p {
+	color: #857B85;
+	font-size: 1.1em;
+}
+
+section article p:nth-child(2) {
+	margin: 1.0em auto;
+}
+
+section article hr {
+	margin-top: 2.0em;
+}
+
+section article a {
+	color: blue;
+}
+
+#twitter {
+	width: 100%;
+	float: left;
+	margin: 0.5em auto;
+	padding: 1.0em;
+	line-height: 2.8em;
+}
+
+#twitter p {
+	margin-left: 15.0em;
+}
+
+#twitter p a {
+	color: blue;
+	font-size: 1.1em;
+}
+
+#twitter dfn {
+	color: #B8B8B8;
+	font-size: 1.1em;
+	font-style: italic;
+	padding-left: 1.0em;
+}
+
+#twitter dfn:before {
+	content: url(../resources/twitter.PNG);
+}
+
+footer {
+	width: 100%;
+	float: left;
+	background: black;
+	padding: 1.5em;
+}
+
+footer div {
+	display: inline;
+	width: 17%;
+	float: left;
+	color: #857B85;
+	margin: 0 0.9em;
+	line-height: 1.2em;
+}
+
+footer div h3 {
+	color: white;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	letter-spacing: 0.06em;
+}
+
+footer div h4, footer nav ul li:nth-child(1){
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 0.8em;
+}
+
+footer div nav ul li {
+	margin: 0.5em;
+} 
+
+footer div nav ul li a {
+	color: white;
+	text-decoration: none;
+	margin-left: 0.5em;
+}
+
+footer div span {
+	color: white;
+}

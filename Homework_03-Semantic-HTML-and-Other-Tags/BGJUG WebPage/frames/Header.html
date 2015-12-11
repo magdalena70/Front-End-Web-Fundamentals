@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Header</title>
+		<style>
+			header h1 {
+			font-size: 2.4em;
+			margin-bottom: 1.0em;
+			}
+
+			header nav {
+				width: 100%;
+			}
+
+			header nav ul li {
+				display: inline;
+				float: left;
+				margin-right: 5.0em;
+			}
+
+			header nav ul li a {
+				color: #B8B8B8;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+
+			header form input {
+				width: 16.0em;
+				height: 2.5em;
+				margin-left: 37.0em;
+				padding-left: 0.5em;
+				border: none;
+				border: solid 0.1em lightgray;
+				border-right: none;
+				vertical-align: middle;
+			}
+
+			header form button {
+				width: 2.5em;
+				height: 2.5em;
+				background-image: url(../resources/search.PNG);
+				margin-left: -0.4em;
+				border: none;
+				border: solid 0.1em lightgray;
+				border-left: none;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+			<header>
+				<h1>BGJUG - Bulgarian Java User Group</h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">about</a>
+						</li>
+						<li>
+							<a href="#">events</a>
+						</li>
+						<li>
+							<a href="#">contacts</a>
+						</li>
+					</ul>
+					<form method="get" action="#">
+						<input type="text" placeholder="Search" maxlength="100">
+						<button type="submit"></button>
+					</form>
+				</nav>
+			</header>
+			<hr />
+		</body>
+</html>

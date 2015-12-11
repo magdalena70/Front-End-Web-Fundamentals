@@ -1,0 +1,69 @@
+body, section, header, h1, article, iframe, nav, ul, li, a{
+	padding: 0;
+	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+body{
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+body section{
+	width: 75%;
+	margin: 10px auto;
+	background-color: #000;
+	border-radius: 10px;
+	padding: 15px 12px;
+}
+
+	section header h1{
+		text-align: center;
+		color: #F5C206;
+		font-size: 56px;
+		font-weight: bold;
+		padding: 15px;
+	}
+	
+	section article{
+		display: inline-block;
+		margin: 8px 16px;
+	}
+	
+	section #iframe{
+		width: 40%;
+	}
+		
+		section #iframe iframe{
+			border: solid 2px #F5C206;
+		}
+		
+		section #nav{
+			width: 50%;
+		}
+		
+			section #nav nav ul li{
+				list-style: none;
+				margin-top: 4px;
+			}
+			
+				section #nav nav ul li a,
+				section #nav nav ul li a:active{
+					text-decoration: none;
+					color: #fff;
+					font-size: 42px;
+					font-style: italic;
+				}
+				
+					section #nav nav ul li a:hover{
+						color: #FF0000;
+						border-bottom: solid 2px #FF0000;
+					}
+					
+					section #nav nav ul li a:focus{
+						color: #FF0000;
+					}
+					

@@ -1,0 +1,100 @@
+html, body, div, h1, h2, p, img, article, embed, 
+figure, figcaption, meter, footer, header, section,
+audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, figcaption, figure, 
+footer, header, section {
+	display: block;
+}
+
+/*Most browsers will display the <embed> element*/
+embed:focus { 
+    outline: none;
+}
+
+body{
+	font-size: 16px;
+	font-family: Tahoma, sans-serif;
+	line-height: 1;
+}
+
+	body #wrapper {
+		width: 95%;
+		margin: 0 auto;
+		background-color: pink;
+		border-radius: 1.0em;
+	}
+		
+		#wrapper section{
+			width: 100%;
+			margin: 2.0 auto;
+			padding: 1.0em;
+		}
+		
+				#wrapper section header  h1 {
+					font-size: 2.5em;
+					font-weight: bold;
+					text-align: center;
+				}
+
+			#wrapper section  article {
+				height: 260px;
+				display: inline-block;
+				margin: 0.7em;
+			}
+
+					#wrapper section article header h2 {
+						font-size: 1.4em;
+						margin: 0.2em auto;
+					}
+
+			#wrapper section #kent-profile {
+				width: 20%;
+				margin-left: 3.0em;
+			}
+
+					#wrapper section #kent-profile figure img{
+						margin: 0 0 0.4em 0;
+						width: 100%;
+					}
+
+				#wrapper section #kent-profile meter {
+					width: 70%;
+					height: 1.7em;
+					margin: 0.5em 0 0.6em 0;
+				}
+
+			#wrapper section #audio {
+				width: 30%;
+			}
+
+				#wrapper section #audio div{
+					width: 100%;
+					background-color: black;
+					padding: 3.5em 0;
+				}
+
+				#wrapper section #audio figure audio {
+					width: 100%;
+					margin: 0.2em auto;
+				}
+
+			#wrapper section #video {
+				width: 40%;
+			}
+
+				#wrapper section #video figure video{
+					width: 100%;
+					height: auto;
+				}

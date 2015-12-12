@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Styling HTML Form</title>
+		<meta charset="UTF-8">
+		<link href="styles/style.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<form method="get" action="#">
+				<fieldset>
+					<legend>Step 1: Your details</legend>
+					<div class="section">
+						<label for="name">Name </label>
+						<input type="text" id="name" name="name" placeholder="First and last name" required>
+					</div>
+					<div class="section">
+						<label for="email">Email   </label>
+						<input type="email" id="email" name="email" placeholder="example@domain.com" required>
+					</div>
+					<div class="section">
+						<label for="phone">Phone</label>
+						<input type="text" id="phone" name="phone" placeholder="eg. +447500000000">
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Step 1: Delivery address</legend>
+					<div class="section">
+						<label for="address">Address</label>
+						<textarea name="address" id="address"></textarea>
+					</div>
+					<div class="section">
+						<label for="post-code">Post code</label>
+						<input type="text" id="post-code" name="post-code">
+					</div>
+					<div class="section">
+						<label for="country">Country</label>
+						<input type="text" id="country" name="country" required>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Step 1: Card details</legend>
+					<div class="radio-section">
+						<p>Card type</p>
+						<div class="card-section">
+							<input type="radio" name="radio-button" id="visa">
+							<div class="visa-card"></div><label for="visa">VISA</label>
+						</div>
+						<div class="card-section">
+							<input type="radio" name="radio-button" id="amEx">
+							<div class="amEx-card"></div><label for="amEx">AmEx</label>
+						</div>
+						<div class="card-section">
+							<input type="radio" name="radio-button" id="mastercard">
+							<div class="master-card"></div><label for="mastercard">Mastercard</label>
+						</div>
+					</div>
+					<div class="section">
+						<label for="card-number">Card number</label>
+						<input type="text" id="card-number" name="card-number" required>
+					</div>
+					<div class="section">
+						<label for="security">Security code</label>
+						<input type="password" id="security" name="security" required>
+					</div>
+					<div class="section">
+						<label for="name-card">Name on card</label>
+						<input type="text" id="name-card" name="name-card" placeholder="exact name as on the card" required>
+					</div>
+				</fieldset>
+				<input type="submit" value="buy it!">
+			</form>
+		</div>
+	</body>
+</html>

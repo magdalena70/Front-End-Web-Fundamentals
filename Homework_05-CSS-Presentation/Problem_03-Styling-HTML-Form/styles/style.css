@@ -1,0 +1,175 @@
+body, div, form, fieldset, legend, input, textarea, label, p{
+	padding: 0;
+	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input{
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body{
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+	body #wrapper {
+		width: 40%;
+		margin: 10px auto;
+		padding: 10px;
+		background-image: url(../resources/formBackground.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: white;
+		border-radius: 10px;
+	}
+	
+		#wrapper form{
+			width: 100%;
+			margin: auto;
+			padding: 10px;
+		}
+				
+			#wrapper form fieldset {
+				width: 100%;
+				border: none;
+			}
+		
+				#wrapper form fieldset legend {
+					font-size: 20px;
+					margin: 3px 0;
+				}
+
+				#wrapper form fieldset .section,
+				#wrapper form fieldset .radio-section,
+				#wrapper form fieldset .address-section {
+					background: rgba(255, 255, 255, 0.4);
+					width: 100%;
+					margin: 5px auto;
+					padding: 5px 0;
+					border: solid 1px #fff;
+					border-radius: 8px;
+					box-shadow: 2px 2px 8px #fff;
+				}
+				
+				#wrapper form fieldset label{
+					width: 27%;
+					margin: 0 5px;
+					display: inline-block;
+					font-size: 18px;
+					color: #000;
+					vertical-align: middle;
+				}
+
+				#wrapper form fieldset input[type="text"],
+				#wrapper form fieldset input[type="email"],
+				#wrapper form fieldset input[type="password"],
+				#wrapper form fieldset textarea {
+					width: 60%;
+					padding: 5px;
+					display: inline-block;
+					font-size: 16px;
+					font-family: sans-serif;
+					border-radius: 6px;	
+					vertical-align: middle;
+					outline: none;
+				}
+
+				#wrapper form fieldset textarea {
+					height: 120px;
+					margin: 10px auto;
+				}
+
+						#wrapper form fieldset input:focus,
+						#wrapper form fieldset textarea:focus {
+							background: rgba(231, 191, 243, 0.5);
+							border: none;
+							border: inset 2px #4072ad;
+						}
+
+					#wrapper form fieldset .radio-section p {
+						font-size: 18px;
+						color: #000;
+						margin: 5px;
+					}
+					
+					#wrapper form fieldset .radio-section .card-section{
+						display: inline-block;
+						width: 23%;
+						margin-left: 20px;
+					}
+					
+					#wrapper form fieldset .radio-section .card-section:last-child{
+						display: inline-block;
+						width: 31%;
+					}
+					
+						#wrapper form fieldset .radio-section .card-section label,
+						#wrapper form fieldset .radio-section .card-section input[type="radio"],
+						#wrapper form fieldset .radio-section .card-section div{
+							display: inline-block;
+							vertical-align: middle;
+							margin: 10px auto;
+						}
+						
+						#wrapper form fieldset .radio-section .card-section label{
+							width: auto;
+						}
+						
+						#wrapper form fieldset .radio-section .card-section input[type="radio"]{
+							width: 14px;
+							height: 14px;
+						}
+
+							#wrapper form fieldset .radio-section .card-section .visa-card,
+							#wrapper form fieldset .radio-section .card-section .amEx-card,
+							#wrapper form fieldset .radio-section .card-section .master-card {
+								width: 35px;
+								height: 23px;
+							}
+
+							#wrapper form fieldset .radio-section .card-section .visa-card {
+								background-image: url('../resources/visa.png');
+								background-repeat: no-repeat;
+								background-position: center center;
+								border: solid 1px #3764AB;
+							}
+
+							#wrapper form fieldset .radio-section .card-section .amEx-card {
+								background-image: url('../resources/amex.png');
+								background-repeat: no-repeat;
+								background-position: center center;
+								border: solid 1px #3764AB;
+							}
+
+							#wrapper form fieldset .radio-section .card-section .master-card {
+								background-image: url('../resources/mastercard.png');
+								background-repeat: no-repeat;
+								background-position: center center;
+								border: solid 1px #3764AB;
+							}
+							
+			#wrapper form input[type='submit'] {
+				width: 30%;
+				font-size: 16px;
+				margin: 10px 35%;
+				text-transform: uppercase;
+				padding: 10px 0;
+				border: solid 1px #05132C;
+				border-radius: 30px;
+				color: #fff;
+				background: #05132C;
+			}
+			
+				#wrapper form input[type='submit']:hover{
+					cursor: pointer;
+					outline: none;
+					background-color: transparent;
+					box-shadow: 2px 2px 8px #fff;
+				}

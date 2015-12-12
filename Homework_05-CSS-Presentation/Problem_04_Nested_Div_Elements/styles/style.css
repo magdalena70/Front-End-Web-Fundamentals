@@ -1,0 +1,12 @@
+div {
+	width: 94.2%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #234465;
+	border-radius: 100px;
+	background: #FF9C00;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}

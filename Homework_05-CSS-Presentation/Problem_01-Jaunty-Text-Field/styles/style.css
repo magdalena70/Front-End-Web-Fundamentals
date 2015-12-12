@@ -1,0 +1,114 @@
+body, div, header, h1, h2, textarea{
+	margin: 0;
+	padding: 0;
+}
+
+body, textarea{
+	font-family: Tahoma, sans-serif;
+	font-size: 19px;
+}
+
+body #wrapper {
+	width: 54%;
+	height: 280px;
+	margin: 20px auto;
+	border-top: 7px dotted #FFFF00;
+    border-left: 7px dashed #FF0000;
+    border-right: 16px solid #008000;
+    border-bottom: double 10px #0202F7;
+	box-shadow: 23px 20px 12px #3F3F3F;
+	text-align: center;
+}
+
+			#wrapper .wrapper_header h1 {
+				font-size: 53px;
+				text-transform: uppercase;
+				font-weight: normal;
+				margin: 19px auto;
+				text-shadow: 13px 15px 12px #ADADAD; 
+			}
+
+		#wrapper #ellipse {
+			width: 89%;
+			height: 120px;
+			box-shadow: 0 0 0 3px #FBFD00, 0 0 0 5px #006F21, 0 0 0 8px #0028AE;
+			border: solid 2px #FF1A1A;
+			border-radius: 60px;
+			margin: 40px auto auto auto;
+		}
+
+				#wrapper #ellipse .ellipse_header  h2 {
+					font-size: 24.5px;
+					font-weight: normal;
+					color: #28232D;
+					margin: 15px 0 24px 0;
+					text-shadow: 10px 12px 7px #ADADAD;
+				}
+
+			#wrapper #ellipse textarea {
+				width: 227px;
+				height: 24px;
+				text-align: center;
+				resize: none;
+				background-color: #D8921A;
+				border: outset 4px #FCA401;
+				overflow: auto;
+				position: relative;
+				bottom: 3px;
+			}
+
+			::-webkit-input-placeholder { /* WebKit browsers */
+				color: black;
+				font-family: sans-serif;
+				font-size: 19px;
+			}
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			   color: black;
+			   font-family: sans-serif;
+			   font-size: 19px;
+			}
+			::-moz-placeholder { /* Mozilla Firefox 19+ */
+			   color: black;
+			   font-family: sans-serif;
+			   font-size: 19px;
+			}
+
+			:-ms-input-placeholder { /* Internet Explorer 10+ */
+			   color: black;
+			   font-family: sans-serif;
+			   font-size: 19px;
+			}
+			
+		#wrapper .small_balloon , #wrapper .middle_balloon , #wrapper .large_balloon {
+			border: dashed 3px white;
+			border-radius: 50%;
+			background-color: rgba(128, 128, 128, 0.5);
+			box-shadow: 0 0 0 7px rgba(128, 128, 128, 0.5);
+			position: absolute;
+		}
+
+		#wrapper .small_balloon {
+			width: 18px;
+			height: 18px;
+			left: 65%;
+			top:  194px;
+		}
+
+		#wrapper .middle_balloon {
+			width: 31px;
+			height: 31px;
+			left: 69%;
+			top: 142px;
+		}
+
+		#wrapper .large_balloon {
+			width: 137px;
+			height: 69px;
+			font-size: 24px;
+			font-weight: bold;
+			color: white;
+			padding-top: 10px;
+			left: 73.9%;
+			top: 71px;
+		}	
+	

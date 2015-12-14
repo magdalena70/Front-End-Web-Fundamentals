@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Barbie’s Twitter</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="styles/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="navigation">
+					<nav>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-bell"></span> Notifications</a></li>
+							<li><a href="#"><i class="fa fa-hashtag"></i> Discover</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> Me</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id="logo">
+					<img src="resources/tweet.PNG" alt="logo"/>
+				</div>
+				<form method="get" action="index.html">
+					<input type="search" id="search" name="search" placeholder="Search"/><!--
+				 --><button type="submit"><span class="glyphicon  glyphicon-search"></span></button>
+				</form>
+				<div id="settings">
+					<nav>
+						<ul>
+							<li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+							<li><a href="#" id="nav-img"></a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<aside>
+				<div id="article-profile">
+					<div id="avatar">
+						<div class="img-box"><img src="resources/barbie.PNG" alt="avatar"/></div>
+						<div class="names">
+							<h2>Barbie</h2>
+							<p class="username">@barbie</p>
+						</div>
+					</div>
+					<div id="info">
+						<div>
+							<p class="label">tweets</p>
+							<p class="count">2</p>
+						</div>
+						<div>
+							<p class="label">following</p>
+							<p class="count">26</p>
+						</div>
+						<div>
+							<p class="label">followers</p>
+							<p class="count">1198451</p>
+						</div>
+					</div>
+				</div>		
+				<div id="article-form-box">
+					<form>
+						<input type="text" id="tweet" name="tweet" placeholder="Compose new Tweet"/><!--
+					 --><input type="submit" value="Add"/>
+					</form>
+				</div>				
+				<div id="article-trends">
+					<header>
+						<h2>Trends <i class="fa fa-circle"></i> <span><a href="#">change</a></span></h2>
+					</header>
+					<nav>
+						<ul>
+							<li><a href="#">Zelda</a></li>
+							<li><a href="#">Rik Mayall</a></li>
+							<li><a href="#">World Cup</a></li>
+							<li><a href="#">#SMBE14</a></li>
+							<li><a href="#">#PillsNPotionsOnVevo</a></li>
+							<li><a href="#">#RHShooting</a></li>
+							<li><a href="#">Mosul</a></li>
+							<li><a href="#">#iraq</a></li>
+							<li><a href="#">#TimeToAct</a></li>
+							<li><a href="#">Oregon</a></li>
+						</ul>
+					</nav>
+				</div>
+			</aside>
+			<section>
+				<header>
+					<h1>Tweets</h1>
+				</header>
+				<article>
+					<div class="author-avatar"><img src="resources/discovery.PNG" alt="discovery"/></div>
+					<div class="tweet-content">
+						<h3>Discovery <span class="username">@Dicovery <i class="fa fa-circle"></i> 3m</span></h3>
+						<p>Q: How do you get blond to marry you</p>
+						<p>A: Tell her she's pregnant</p>
+						<p class="action">
+							<i class="fa fa-file-o"></i>
+							<a href="#"> View summary</a>
+							<span class="tweet-action">
+								<a href="#"><i class="fa fa-reply"></i> Replay</a>
+								<a href="#"><i class="fa fa-retweet"></i> Retweet</a>
+								<a href="#"><i class="fa fa-star"></i> Favorite</a>
+								<a href="#">&#8226;&#8226;&#8226; More</a>
+							</span>
+						</p>
+					</div>
+				</article>
+				<article>
+					<div class="author-avatar"><img src="resources/ellen.PNG" alt="elen-degeners"/></div>
+					<div class="tweet-content">
+						<h3>Ellen DeGeneres <span class="username">@TheEllenShow <i class="fa fa-circle"></i> 4m</span></h3>
+						<p>Q: What can strike a blonde whitout there knowing it? A: A thought</p>
+						<p class="action">
+							<span class="expand">Expand</span>
+							<span class="tweet-action">
+								<a href="#"><i class="fa fa-reply"></i> Replay</a>
+								<a href="#"><i class="fa fa-retweet"></i> Retweet</a>
+								<a href="#"><i class="fa fa-star"></i> Favorite</a>
+								<a href="#">&#8226;&#8226;&#8226; More</a>
+							</span>
+						</p>
+					</div>
+				</article>
+				<article>
+					<div class="author-avatar"><img src="resources/klm.PNG" alt="royal"/></div>
+					<div class="tweet-content">
+						<h3>Royal Duch Airlines <span class="username">@KLM <i class="fa fa-circle"></i> 12m</span></h3>
+						<p>Q: Why do brunetts work hard to keep their figure?</p>
+						<p>A: No one else whants it.</p>
+						<p class="action">
+							<i class="fa fa-caret-square-o-right"></i>
+							<a href="#"> View media</a>
+							<span class="tweet-action">
+								<a href="#"><i class="fa fa-reply"></i> Replay</a>
+								<a href="#"><i class="fa fa-retweet"></i> Retweet</a>
+								<a href="#"><i class="fa fa-star"></i> Favorite</a>
+								<a href="#">&#8226;&#8226;&#8226; More</a>
+							</span>
+						</p>
+					</div>
+				</article>
+				<article>
+					<div class="author-avatar"><img src="resources/ngeoraphic.PNG" alt="n-geographic"/></div>
+					<div class="tweet-content">
+						<h3>National Geographic <span class="username">@NatGeo <i class="fa fa-circle"></i> 23m</span></h3>
+						<p>Q: What did the blonde name her watch dog?</p>
+						<p>A: Timex and Rolex</p>
+						<p class="action">
+							<span class="expand">Expand</span>
+							<span class="tweet-action">
+								<a href="#"><i class="fa fa-reply"></i> Replay</a>
+								<a href="#"><i class="fa fa-retweet"></i> Retweet</a>
+								<a href="#"><i class="fa fa-star"></i> Favorite</a>
+								<a href="#">&#8226;&#8226;&#8226; More</a>
+							</span>
+						</p>
+					</div>
+				</article>
+			</section>
+			<aside>
+				<div id="article-following">
+					<header>
+						<h2>Who to follow <span><i class="fa fa-circle"></i> <a href="#">Refresh</a> <i class="fa fa-circle"></i> <a href="#">View all</a> </span></h2>
+					</header>
+					<div id="content">
+						<div class="to-following">
+							<div class="author-avatar"><img src="resources/demi.PNG" alt="avatar-user1"/></div>
+							<div class="to-following-user-info">
+								<h3>Demi Lovato <span class="glyphicon glyphicon-ok"></span> <span class="username">@ddlovato</span></h3>
+								<button class="follow"><i class="fa fa-user-plus"></i> Follow</button>
+							</div>
+							<button class="remove" title="Remove">&#10007;</button>
+						</div>
+						<div class="to-following">
+							<div class="author-avatar"><img src="resources/justin.PNG" alt="avatar-user2"/></div>
+							<div class="to-following-user-info">
+								<h3>Justin Timberlake <span class="glyphicon glyphicon-ok"></span> <span class="username">@jtimb...</span></h3>
+								<button class="follow"><i class="fa fa-user-plus"></i> Follow</button>
+							</div>
+							<button class="remove" title="Remove">&#10007;</button>
+						</div>
+						<div class="to-following">
+							<div class="author-avatar"><img src="resources/jimmi.PNG" alt="avatar-user3"/></div>
+							<div class="to-following-user-info">
+								<h3>jimmy fallon <span class="glyphicon glyphicon-ok"></span> <span class="username">@jimmyfallon</span></h3>
+								<button class="follow"><i class="fa fa-user-plus"></i> Follow</button>
+							</div>
+							<button class="remove" title="Remove">&#10007;</button>
+						</div>
+					</div>
+				</div>
+				
+				<div id="article-find-people">
+					<p>
+						<a href="#">Find people you know <i class="fa fa-circle"></i> Populare account</a>
+					</p>
+				</div>
+				
+				<div id="article-aside-footer">
+					<p>&#169; 2014 Twitter About Help Terms Privasy Cookies Ads info Brand Blog Status</p>
+					<p>Apps Jobs Advertise Businesses Media Developers</p>
+				</div>
+			</aside>
+		</div>
+	</body>
+</html>

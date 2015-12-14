@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Header</title>
+		<style>
+			header{
+				font-family: Tahoma, sans-serif;
+				overflow: auto;
+			}
+		
+			header h1 {
+			font-size: 1.7em;
+			font-weight: normal;
+			margin-left: 1.8em;
+			}
+
+			header nav {
+				width: 100%;
+				overflow: auto;
+				margin: 0;
+			}
+
+			header nav ul li {
+				display: inline;
+				float: left;
+				margin-right: 5.0em;
+				margin-top: 0.5em;
+			}
+			
+				header nav ul:after{
+					clear: both;
+				}
+
+			header nav ul li a {
+				font-size: 0.8em;
+				color: #B8B8B8;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			
+			header form{
+				text-align: right;
+			}
+
+			header form input {
+				width: 16.0em;
+				height: 2.0em;
+				margin-bottom: 2.0em;
+				padding-left: 0.5em;
+				border: solid 0.1em lightgray;
+				vertical-align: middle;
+			}
+
+			header form button {
+				width: 2.5em;
+				height: 2.3em;
+				margin-bottom: 2.0em;
+				margin-right: 4.0em;
+				background-image: url(../resources/search.PNG);
+				background-repeat: no-repeat;
+				background-position: center center;
+				border: solid 0.1em lightgray;
+				border-left: none;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+			<header>
+				<h1>BGJUG - Bulgarian Java User Group</h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">about</a>
+						</li>
+						<li>
+							<a href="#">events</a>
+						</li>
+						<li>
+							<a href="#">contacts</a>
+						</li>
+					</ul>
+					<form method="get" action="#">
+						<input type="text" placeholder="Search" maxlength="100"><!--
+				     --><button type="submit"></button>
+					</form>
+				</nav>
+			</header>
+			<hr />
+		</body>
+</html>

@@ -1,0 +1,476 @@
+@font-face{
+	font-family: "Every little thing that you do or say";
+	src: url('fonts/Every little thing that you do or say.ttf');
+}
+
+body, header, footer, aside, div, nav, ul, li, a, p, i, form, input, button, img, span{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+body li{
+	list-style: none;
+}
+
+body a{
+	text-decoration: none;
+}
+
+body input{
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+	::-webkit-input-placeholder { /* WebKit browsers */
+		color: #DADADA;
+		font-family: sans-serif;
+		font-size: 14px;
+	}
+	
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: #DADADA;
+	   font-family: sans-serif;
+	   font-size: 14px;
+	}
+	
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color: #DADADA;
+	   font-family: sans-serif;
+	   font-size: 14px;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color: #DADADA;
+	   font-family: sans-serif;
+	   font-size: 14px;
+	}
+
+/*****             *****/
+body #wrapper{
+	width: 100%;
+	background-color: #C0DEED;
+	padding: 0 1.5em 1.5em 1.5em;
+}
+	/* header */
+	#wrapper> header{
+		width: 100%;
+		background-color: #fff;
+		padding: 1.0em 0;
+	}
+	
+		#wrapper> header #navigation,
+		#wrapper> header #logo,
+		#wrapper> header form,
+		#wrapper> header #settings{
+			display: inline-block;
+			vertical-align: middle;
+			text-align: right;
+		}
+		
+		#wrapper> header #navigation,
+		#wrapper> header form{
+			width: 33%;
+		}
+		
+			#wrapper> header form input[type=search]{
+				height: 2.2em;
+				padding-left: 0.5em;
+				background-color: #A3ACB2;
+				border: solid 1px #A3ACB2;
+				border-radius: 1.0em 0 0 1.0em;
+				outline: none;
+				vertical-align: middle;
+				color: #000;
+			}
+			
+				#wrapper> header form input[type=search]:focus{
+					border: solid 1px #66ABE0;
+					background-color: #fff;
+				}
+			
+			#wrapper> header form button[type=submit]{
+				width: 2.2em;
+				height: 2.2em;
+				background-color: #A3ACB2;
+				border: solid 1px #A3ACB2;
+				border-radius: 0 1.0em 1.0em 0;
+				outline: none;
+				vertical-align: middle;
+				text-align: center;
+				color: #fff;
+			}
+		
+		#wrapper> header #logo,
+		#wrapper> header #settings{
+			width: 15%;
+		}
+		
+			#wrapper> header #navigation nav ul li,
+			#wrapper> header #settings nav ul li{
+				display: inline-block;
+				margin: 0.3em;
+			}
+			
+				#wrapper> header #navigation nav ul li a,
+				#wrapper> header #settings nav ul li a{
+					padding: 0.5em;
+					color: #66757F;
+				}
+				
+						#wrapper> header #navigation nav ul li a:hover,
+						#wrapper> header #settings nav ul li a:hover{
+							text-decoration: none;
+							border-bottom: solid 1px #000;
+							color: #000;
+						}
+				
+					#wrapper> header #navigation nav ul li a .glyphicon,
+					#wrapper> header #navigation nav ul li a .fa,
+					#wrapper> header #settings nav ul li a .glyphicon{
+						font-size: 1.4em;
+					}
+				
+				#wrapper> header #settings nav ul li #nav-img{
+					background-image: url('../resources/nav.PNG');
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center center;
+					padding: 0.5em 1.3em;
+					border: solid 1px #fff;
+					border-radius: 0.6em;
+				}
+				
+						#wrapper> header #settings nav ul li #nav-img:hover{
+							box-shadow: 0.3em 0.3em 0.4em #3764AB;
+						}
+						
+	/* aside */
+	#wrapper aside{
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	#wrapper aside:first-of-type{
+		width: 24%;
+	}
+	
+	#wrapper aside:last-of-type{
+		width: 26%;
+	}
+		
+		/* left aside - #article-profile */
+		#wrapper aside #article-profile{
+			background: -webkit-linear-gradient(to bottom, #0084B4, #0084B4 45%, #fff, #fff 45%);
+			background: -o-linear-gradient(to bottom, #0084B4, #0084B4 45%, #fff, #fff 45%);
+			background: -moz-linear-gradient(to bottom, #0084B4, #0084B4 45%, #fff, #fff 45%);
+			background: linear-gradient(to bottom, #0084B4, #0084B4 45%, #fff, #fff 45%);
+			border-radius: 1.0em 1.0em 0 0;
+			padding: 0.5em;
+			margin-top: 0.8em;
+		}
+		
+		#wrapper aside #article-profile #avatar .img-box{
+					background-color: #fff;
+					display: inline-block;
+					width: 76px;
+					height: 76px;
+					margin: 4.0em 0.5em 2.0em 0.5em;
+					border-radius: 0.5em 0.5em 0 0;
+				}
+				
+					#wrapper aside #article-profile #avatar .img-box img{
+						width: 100%;
+					}
+			
+				#wrapper aside #article-profile #avatar .names{
+					font-family: "Every little thing that you do or say";
+					display: inline-block;
+					width: 50%;
+					margin-bottom: 2.5em;
+					vertical-align: bottom;
+					line-height: 0;
+					font-weight: bold;
+				}
+				
+					#wrapper aside #article-profile #avatar .names h2{
+						font-size: 1.7em;
+						text-transform: uppercase;
+						letter-spacing: 0.1em;
+					}
+					
+					#wrapper aside #article-profile #avatar .names .username{
+						font-size: 1.5em;	
+					}
+			
+				#wrapper aside #article-profile #info div{
+					display: inline-block;
+					width: 32%;
+					text-transform: uppercase;
+					text-align: center;
+				}
+				
+					#wrapper aside #article-profile #info div .label{
+						font-size: 0.8em;
+						color: #C4C7D1;
+					}
+					
+					#wrapper aside #article-profile #info div .count{
+						font-size: 1.3em;
+						color: #0084B4;
+					}
+		
+		/* left aside - #article-form-box; right aside - #article-find-people */
+		#wrapper aside #article-form-box,
+		#wrapper aside #article-find-people{
+			background-color: #E5F2F7;
+			box-shadow: 0.1em 0.1em 0.3em #55ACEE;
+			border-radius: 0 0 1.0em 1.0em;
+			padding: 2.0em 0.2em 1.5em 0.2em;
+			margin-bottom: 1.0em;
+			text-align: center;
+			font-size: 0.9em;
+		}
+		
+			/* left aside - #article-form-box */
+			#wrapper aside #article-form-box form input[type=text]{
+				width: 60%;
+				padding: 0.3em;
+				vertical-align: middle;
+				border: solid 1px #55ACEE;
+				outline: none;
+			}
+					#wrapper aside #article-form-box form input[type=text]:focus{
+						border-color: #0084B4;
+						color: #000;	
+					}
+			
+			#wrapper aside #article-form-box form input[type=submit]{
+				width: 20%;
+				background-color: #fff;
+				padding: 0.3em;
+				vertical-align: middle;
+				border: solid 1px #55ACEE;
+				border-left: none;
+				outline: none;
+				color: #DADADA;
+			}
+			
+					#wrapper aside #article-form-box form input[type=submit]:hover{
+						background-color: #0084B4;
+						color: #fff;
+					}
+			
+			/* right aside - #article-find-people */
+			#wrapper aside #article-find-people p a::before{
+				content: url('../resources/find-people.PNG');
+				display: inline-block;
+				vertical-align: middle;
+				padding-right: 0.3em;
+			}
+			
+					#wrapper aside #article-find-people p a:hover{
+						text-decoration: underline;
+					}
+			
+			#wrapper aside #article-find-people p a  .fa{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 0.2em;
+			}
+					
+		/* left aside - #article-trends; right aside - #article-aside-footer */
+		#wrapper aside #article-trends,
+		#wrapper aside #article-aside-footer{
+			background-color: #fff;
+			font-size: 0.9em;
+			border-radius: 1.0em;
+			padding: 1.5em 2.5em;
+			line-height: 1.5em;
+		}	
+			/* left aside - #article-trends */
+			#wrapper aside #article-trends h2{
+				margin: 0 0 0.5em 0;
+				font-size: 1.4em;
+				color: #81868C;
+			}
+			
+				#wrapper aside #article-trends h2 .fa{
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 0.2em;
+					color: #81868C;
+				}
+			
+				#wrapper aside #article-trends h2 span{
+					font-size: 0.9em;
+				}
+				
+			/* right aside - #article-aside-footer */
+			#wrapper aside #article-aside-footer p{
+				margin: 0;
+				color: #A3ACB2;
+			}
+					
+	/* section */
+	#wrapper section{
+		width: 46%;
+		margin: 0.8em;
+		background-color: #fff;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0.5em;
+		border-radius: 1.0em;
+		line-height: 1.5em;
+	}
+	
+		#wrapper section article{
+			border-top: solid 1px #C0DEED;
+			font-size: 0.9em;
+		}
+	
+			#wrapper section header h1{
+				font-size: 1.6em;
+				font-weight: normal;
+				color: #66757F;
+			}
+		
+			/* section; right aside - #article-following */
+			#wrapper section article .author-avatar,
+			#wrapper aside #article-following #content .to-following .author-avatar{
+				display: inline-block;
+				width: 49px;
+				height: 49px;
+				vertical-align: top;
+				margin-top: 2.0em;
+			}
+			
+				#wrapper section article .author-avatar img,
+				#wrapper aside #article-following #content .to-following .author-avatar img{
+					width: 100%;
+				}
+		
+			#wrapper section article .tweet-content{ 
+				display: inline-block;
+				width: 90%;
+			}
+			
+			#wrapper aside #article-following #content .to-following-user-info{
+				display: inline-block;
+				width: 70%;
+			}
+			
+				#wrapper section article .tweet-content h3,
+				#wrapper aside #article-following #content .to-following .to-following-user-info h3{
+					font-size: 1.2em;
+					color: #5F5B55;
+				}
+				
+					#wrapper section article .tweet-content h3 .username,
+					#wrapper aside #article-following #content .to-following .to-following-user-info h3 .username{ 
+						font-size: 0.9em;
+						color: #C8C8C8;
+					}
+					
+						#wrapper section article .tweet-content h3 .username .fa{
+							display: inline-block;
+							vertical-align: middle;
+							font-size: 0.2em;
+							color: #C8C8C8;
+						}
+						
+					#wrapper section article .tweet-content .action .expand{
+						color: #C8C8C8;
+					}
+					
+					#wrapper section article .tweet-content .action .tweet-action{
+						float: right;
+					}
+					
+						#wrapper section article .tweet-content .action::after{
+							clear: both;
+						}
+					
+						#wrapper section article .tweet-content .action .tweet-action a{
+							margin-right: 0.5em;
+							color: #C0DEED;
+						}
+					
+					/* right aside - #article-following */
+					#wrapper aside #article-following #content .to-following .to-following-user-info h3 .glyphicon{
+						background-color: #55ACEE;
+						color: #fff;
+						border-radius: 50%;
+						font-size: 0.6em;
+						font-weight: normal;
+						padding: 0.3em;
+					}
+												
+		#wrapper aside #article-following{
+			background-color: #fff;
+			font-size: 0.9em;
+			border-radius: 1.0em 1.0em 0 0;
+			padding: 0.5em;
+			margin-top: 0.8em;
+		}
+		
+				#wrapper aside #article-following header h2{
+					font-size: 1.4em;
+					color: #66757F; 
+				}
+					
+					#wrapper aside #article-following header h2 span{
+						font-size: 0.6em;
+					}
+					
+						#wrapper aside #article-following header h2 span .fa{
+							display: inline-block;
+							vertical-align: middle;
+							font-size: 0.2em;
+							color: #C0DEED;
+						}
+					
+				#wrapper aside #article-following #content .to-following .to-following-user-info .follow{
+					background-color: #F5F8FA;
+					padding: 0.3em 1.5em;
+					border: solid 1px #55ACEE;
+					border-radius: 0.6em;
+				}
+				
+						#wrapper aside #article-following #content .to-following .to-following-user-info .follow:hover{
+							cursor: pointer;
+							background-color: #0084B4;
+							color: #fff;
+						}
+				
+					#wrapper section article .tweet-content .fa,
+					#wrapper aside #article-following #content .fa {
+						color: #55ACEE;
+					}
+	
+				#wrapper aside #article-following #content .to-following .remove{
+					display: inline-block;
+					font-size: 1.2em;
+					vertical-align: top;
+					margin-top: 0.8em;
+					padding: 0 0.5em;
+					border: none;
+					background-color: #fff;
+					color: #C8C8C8;
+					outline: none;
+				}
+				
+					#wrapper aside>  #article-following> #content> .to-following>.remove:hover{
+						color: #FF0D2E;
+						border: solid 1px #C8C8C8;
+					}

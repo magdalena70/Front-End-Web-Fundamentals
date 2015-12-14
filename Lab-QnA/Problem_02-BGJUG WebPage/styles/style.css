@@ -1,0 +1,315 @@
+body, div , header, aside, h1, h2, h3, h4, nav, ul, li, a, p, form, input, button, label{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Tahoma, sans-serif;
+	font-size: 0.9em;
+	overflow: auto;
+}
+
+h1, h2, h3, h4{
+	font-weight: normal;
+}
+
+input{
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+li{
+	list-style: none;
+}
+
+body #wrapper {
+	width: 85%;
+	margin: 0 auto;
+	padding: 1.0em;
+}
+
+	#wrapper:after{
+		clear: both;
+	}
+
+		#wrapper header h1 {
+			font-size: 2.2em;
+			margin-left: 0.5em;
+		}
+
+	    #wrapper header nav {
+			width: 100%;
+			overflow: auto;
+			margin: 1.0em 0;
+		}
+		
+			#wrapper header nav ul{
+				width: 45%;
+				padding: 0.5em;
+				float: left;
+				vertical-align: middle;
+				overflow: auto;
+			}
+			
+				#wrapper header nav:after{
+					clear: both;
+				}
+
+				#wrapper header nav ul li {
+					display: inline;
+					float: left;
+					margin-right: 5.0em;
+				}
+				
+					#wrapper header nav ul:after{
+						clear: both;
+					}
+
+					#wrapper header nav ul li a {
+						color: #B8B8B8;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+					
+						#wrapper header nav ul li a:hover {
+							text-decoration: underline;
+						}
+					
+			#wrapper header form{
+				width: 50%;
+				float: left;
+				vertical-align: middle;
+				overflow: auto;
+			}
+			
+				#wrapper header:after{
+					clear: both;
+				}
+
+				#wrapper header form input {
+					background-color: #F7F7F7;
+					margin-left: 22.0em;
+					float: left;
+					padding: 0.6em;
+					border: solid 0.1em #C8C8C8;
+					vertical-align: middle;
+				}
+				
+					#wrapper header form input:focus{
+						border: solid 1px #35A2FF;
+						background-color: #fff;
+					}
+
+				#wrapper header form button {
+					width: 2.5em;
+					height: 2.5em;
+					float: left;
+					background-image: url(../resources/search.PNG);
+					border: solid 0.1em #C8C8C8;
+					vertical-align: middle;
+				}
+				
+					#wrapper header form button:hover{
+						cursor: pointer;
+						border: solid 1px #35A2FF;
+					}
+					
+					#wrapper header form:after{
+						clear: both;
+					}
+
+	#wrapper aside {
+		width: 20%;
+		float: left;
+		margin-top: 3.6em;
+		padding-right: 2.0em;
+	}
+
+			#wrapper aside nav ul li {
+				display: block;
+				margin-bottom: 1.2em;
+			}
+
+				#wrapper aside nav ul li a {
+					color: #66ABE0;
+					text-decoration: none;
+					line-height: 1.1em;
+					font-size: 1.0em;
+				}
+				
+					#wrapper aside nav ul li a:hover{
+						text-decoration: underline;
+					}
+
+		#wrapper aside label {
+			color: #B8B8B8;
+			text-transform: uppercase;
+		}
+
+		#wrapper aside p{
+			color: #B8B8B8;
+			text-transform: uppercase;	
+			letter-spacing: 0.3em;
+		}
+
+		#wrapper aside select {
+			font-size: 1.0em;
+			font-family: sans-serif;
+			margin-bottom: 1.5em;
+			margin-left: 0.5em;
+		}
+
+	#wrapper #section {
+		width: 55%;
+		float: left;
+		margin: 1.5em;
+		margin-right: 2.0em;
+		line-height: 1.1em;
+	}
+	
+		#wrapper #section article {
+			margin: 1.5em auto;
+			padding: 0 1.0em;
+		}
+
+			#wrapper #section article header {
+				margin-bottom: 1.0em;
+			}
+
+				#wrapper #section article header h2 {
+					font-size: 1.7em;
+					margin: 0.3em auto;
+				}
+				
+			#wrapper #section article p {
+				color: #5F5B55;
+				font-size: 1.0em;
+			}
+
+			#wrapper #section article p:nth-child(2) {
+				margin: 1.0em auto;
+			}
+
+			#wrapper #section article hr {
+				margin-top: 2.0em;
+			}
+
+			#wrapper #section article a {
+				color: #66ABE0;
+			}
+
+				#wrapper #section article header span {
+					font-size: 0.8em;
+					color: #B8B8B8;
+				}
+
+					#wrapper #section article span a {
+						text-transform: uppercase;
+						color: #857B85;
+					}
+					
+						#wrapper #section article span a:hover{
+						text-decoration: underline;
+					}
+
+					#wrapper #section span time {
+						text-transform: uppercase;
+						color: #857B85;
+					}
+
+	#wrapper #twitter {
+		width: 100%;
+		float: left;
+		margin: 0.5em auto;
+		padding: 1.0em;
+		line-height: 2.8em;
+	}
+
+		#wrapper #twitter p {
+			margin-left: 15.0em;
+		}
+
+			#wrapper #twitter p a {
+				color: #66ABE0;
+				font-size: 1.0em;
+			}
+			
+				#wrapper #twitter p a:hover{
+					text-decoration: underline;
+				}
+
+		#wrapper #twitter dfn {
+			color: #B8B8B8;
+			font-size: 1.0em;
+			font-style: italic;
+			padding-left: 1.0em;
+		}
+
+		#wrapper #twitter dfn:before {
+			content: url('../resources/twitter.PNG');
+		}
+
+	#wrapper footer {
+		width: 100%;
+		float: left;
+		background: #000;
+		padding: 1.5em;
+	}
+
+		#wrapper footer div {
+			display: inline;
+			width: 17%;
+			float: left;
+			color: #857B85;
+			margin: 0 0.9em;
+			line-height: 1.1em;
+		}
+		
+			#wrapper footer:after{
+				clear: both;
+			}
+
+			#wrapper footer div h3 {
+				color: #fff;
+				font-size: 1.4em;
+				line-height: 1.1em;
+				letter-spacing: 0.06em;
+			}
+
+			#wrapper footer div h4, #wrapper footer nav ul li:nth-child(1){
+				color: #fff;
+				text-transform: uppercase;
+				margin-bottom: 0.8em;
+			}
+
+				#wrapper footer div nav ul li {
+					margin: 0.5em;
+				} 
+
+					#wrapper footer div nav ul li a {
+						color: #fff;
+						text-decoration: none;
+						margin-left: 0.5em;
+					}
+					
+						#wrapper footer div nav ul li a:hover{
+							text-decoration: underline;
+						}
+
+			#wrapper footer div span {
+				color: #fff;
+			}

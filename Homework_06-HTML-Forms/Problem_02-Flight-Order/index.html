@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flight Order</title>
+		<meta charset="UTF-8">
+		<link href="styles/style.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>flight order</h1>
+			</header>
+			<form>
+				<div id="left-side">
+					<label for="from">From</label>
+					<input list="from-city" id="from" placeholder="enter a city" required>
+					<datalist id="from-city">	
+						<option>Sofia</option>
+						<option>London</option>
+						<option>Roma</option>
+					</datalist>
+					<label for="departure-date">Departure date</label>
+					<input type="date" id="departure-date" name="departure-date" value="2014-06-09"><br/>
+					<label for="return-date" >Return date</label>
+					<input type="date" id="return-date" name="return-date" value="2014-06-13"><br/>
+					<label for="over-twelvе">12+</label>
+					<label for="two-twelvе">2-12</label>
+					<label for="zero-two">0-2</label>
+					<input type="number" min="0" max="100" value="0" id="over-twelvе">
+					<input type="number" min="0" max="100" value="0" id="two-twelvе">
+					<input type="number" min="0" max="100" value="0" id="zero-two">
+				</div>				
+				<div id="right-side">
+					<label for="to">To</label>
+					<input list="to-city" id="to" placeholder="enter a city" required>
+					<datalist id="to-city">
+						<option>Paris</option>
+						<option>Moscow</option>
+						<option>Berlin</option>
+					</datalist>
+					<input type="checkbox" id="checkbox" value="yes">
+					<label for="checkbox">Prefer directs</label>
+					<label for="start-time-01">Time interval</label>
+					<input type="time" id="start-time-01" name="start-time" value="00:20">
+					<input type="time" name="end-time-01" value="05:00">
+					<label for="start-time-02">Time interval</label><br/>
+					<input type="time" id="start-time-02" name="start-time" value="16:00">
+					<input type="time" name="end-time-02" value="22:00">
+					<label for="choose-class">Choose class</label>
+					<select id="choose-class">
+						<option selected>Economy</option>
+						<option>First-class</option>
+						<option>Business</option>
+					</select>
+				</div>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+	</body>
+</html>

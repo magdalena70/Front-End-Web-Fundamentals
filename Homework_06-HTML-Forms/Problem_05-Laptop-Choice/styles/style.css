@@ -1,0 +1,137 @@
+body, div, section, header, h1, h2, h3, aside, article, button, p, span, img {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body{
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+	color: #3D4665;
+}
+
+#wrapper {
+	width: 70%;
+	margin: 20px auto;
+	padding: 10px;
+	box-shadow: 3px 3px 10px #CCCCCC;
+}
+
+	#wrapper #content {
+		display: inline-block;
+		width: 70%;
+		margin: 5px;
+		vertical-align: bottom;
+	}
+	
+		#wrapper #content header{
+			padding: 10px 0;
+		}
+
+		#wrapper #content .article {
+			width: 31%;
+			display: inline-block;
+			margin:  6px 4px;
+			font-size: 16px;
+		}
+		
+			#wrapper #content .article button{
+				width: 100%;
+				padding: 15px 0 0 8px;
+				background-color: #fff;
+				border: ridge 1px #E0F1FB;
+				border-radius: 6px 6px 0 6px;
+				color: #2C435B;
+			}
+			
+					#wrapper #content .article button:hover{
+						cursor: pointer;
+						box-shadow: 2px 2px 10px #2C435B;
+					}
+
+			#wrapper #content .article button .title {
+				font-size: 17px;
+				font-weight: bold;
+			}
+			
+			#wrapper #content .article button span {
+				display: inline-block;
+				width: 100%;
+				font-size: 13px;
+				text-align: left;
+				margin: 2px 0 2px 10px;
+			}
+			
+			#wrapper #content .article button .img-box{
+				width: 158px;
+				height: 95px;
+				margin: 0 auto;
+			}
+			
+			#wrapper #content .article button .img-box img{
+				width: 100%;
+			}
+
+			#wrapper #content .article button .price-box {
+				width: 100%;
+				display: inline-block;
+				text-align: right;
+				margin: 5px 0 0 0;
+			}
+			
+				#wrapper #content .article button .price-box .price{
+					width: 54%;
+					display: inline-block;
+					padding: 8px 15px;
+					background-color: #3D4665;
+					border-top-left-radius: 8px;
+					font-weight: normal;
+					color: #fff;
+				}
+			
+	#wrapper #indicators {
+		display: inline-block;
+		width: 23%;
+		vertical-align: bottom;
+		background-color: #F7FCFF;
+		border: ridge 1px #E0F1FB;
+		margin: 5px;
+		padding: 5px;
+		font-size: 15px;
+	}
+	
+		#wrapper #indicators article header{
+			margin: 5px 0;
+		}
+
+			#wrapper #indicators article header h3 {
+				text-align: center;
+				font-size: 14px;
+				margin: 5px 0;
+			}
+		
+		#wrapper #indicators article input{
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		#wrapper #indicators article .left {
+			display: inline-block;
+			width: 48%;
+			vertical-align: middle;
+		}
+
+		#wrapper #indicators article .right {
+			display: inline-block;
+			width: 48%;
+			text-align: right;
+			vertical-align: middle;
+		}
+
+			#wrapper #indicators article input[type="range"] {
+				width: 98%;
+			}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Form</title>
+		<meta charset="UTF-8">
+		<link href="styles/style.css" rel="styleSheet">
+	</head>	
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Enter the system</h1>
+				<p>It is necessary to login in Your account in order to sign in for a course.</p>
+			</header>
+			<div id="left">
+				<fieldset>
+					<legend>are you new? <span>register</span></legend>
+					<form method="post" action="#" name="register">
+						<input type="text" name="user-name" placeholder="User name" required="required" autofocus="autofocus" />
+						<input type="email" name="email" placeholder="Email" required="required" />
+						<input type="password" name="password" placeholder="Password" required="required" />
+						<input type="password" name="confirm-password" placeholder="Confirm Password" required="required" />
+						<input type="submit" name="register" value="Register" id="register" />
+					</form>
+				</fieldset>
+			</div>
+			<div id="right">
+				<fieldset>
+					<legend>already a student? login</legend>
+					<form method="post" action="#" name="login">
+						<input type="text" name="user-name" placeholder="User name" required="required" />
+						<input type="password" name="password" placeholder="Password" required="required" />
+						<input type="checkbox" name="remember-me" value="yes" id="remember-me">
+						<label for="remember-me">Remember me</label>
+						<input type="submit" name="login" value="Login" id="login" />
+					</form>
+					<p><a href="#">Forgot Password</a></p>
+				</fieldset>
+			</div>
+		</div>
+	</body>	
+</html>

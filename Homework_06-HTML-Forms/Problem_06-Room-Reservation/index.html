@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Room Reservation</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="styles/style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Room Reservation</h1>
+			</header>
+			<section>
+				<header>
+					<div>
+						<h2>Basic Information</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Praesent at nibh varius odio sollicitudin blandit nec eu elit.
+							Suspendisse ac risus nunc, quis elementum lorem.
+							Pellentesque vehicula egestas eros nec commodo.
+						</p>
+					</div>
+					<form method="get" action="index.html" id="search-form">
+						<label for="search">Search</label>
+						<input type="search" id="search" name="search"/><!--
+					 --><button type="submit" id="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+				</header>
+				<form id="basic-form">
+					<fieldset id="left">
+						<legend>Personal Details</legend>
+						<input type="text" id="firstame" name="firstname" placeholder="First Name"/>
+						<input type="text" id="lastname" name="lastname" placeholder="Last Name"/>
+						<input type="email" id="email" name="email" placeholder="Enter Email"/>
+					</fieldset>
+					<fieldset id="right">
+						<legend>Request a reservation</legend>
+						<label for="select-room">Select a room:</label>
+						<label for="room-number">Number of Rooms:</label>
+						<select id="select-room" name="select-room">
+							<option>Room 1</option>
+							<option>Room 2</option>
+							<option selected="selected">Room 3</option>
+							<option>Room 4</option>
+						</select>
+						<input type="number" id="room-number" name="room-number" value="1"/>
+						<label for="check-in">Check-In:</label>
+						<label for="check-out">Check-Out:</label>
+						<input type="date" id="check-in" name="check-in" value="2015-12-16"/>
+						<input type="date" id="check-out" name="check-out"/>
+					</fieldset>
+					<hr />
+					<input type="submit" value="Book Now"/>
+				</form>
+			</section>	
+		</div>
+	</body>
+</html>

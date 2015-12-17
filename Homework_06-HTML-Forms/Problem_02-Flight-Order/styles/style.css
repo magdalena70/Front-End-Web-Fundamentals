@@ -1,0 +1,158 @@
+body, div, header, h1, form, label, input, datalist, option{
+	padding: 0;
+	margin: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body{
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+}
+
+body #wrapper {
+	width: 45%;
+	background-color: #FFC0CB;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+	#wrapper header h1 {
+		font-size: 50px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	#wrapper #left-side, #wrapper #right-side {
+		width: 49%;
+		display: inline-block;
+		margin: 10px 0;
+		padding: 0 10px;
+		vertical-align: top;
+	}
+		#wrapper #left-side input, #wrapper #right-side input{
+			font-size: 16px;
+		}
+	
+		#wrapper #left-side label, #wrapper #right-side label,
+		#wrapper #left-side input, #wrapper #right-side input, #wrapper #right-side select,
+		#wrapper #left-side input[list="from-city"], #wrapper #right-side input[list="to-city"]{
+			width: 100%;
+			display: inline-block;
+			padding: 3px;
+		}
+		
+		::-webkit-input-placeholder { /* WebKit browsers */
+			color: black;
+			font-family: sans-serif;
+			font-size: 16px;
+			text-indent: 3px;
+		}
+		
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color: black;
+		   font-family: sans-serif;
+		   font-size: 16px;
+		   text-indent: 3px;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color: black;
+		   font-family: sans-serif;
+		   font-size: 16px;
+		   text-indent: 3px;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		   color: black;
+		   font-family: sans-serif;
+		   font-size: 16px;
+		   text-indent: 5px;
+		}
+		
+		#wrapper #left-side input[type="number"]{
+			padding: 5px 3px;
+		}
+		
+		#wrapper #left-side input[list="from-city"], #wrapper #right-side input[list="to-city"],
+		#wrapper #right-side select{
+			padding: 6px 3px;;
+		}
+		
+		#wrapper #left-side input[list="from-city"]{
+			margin-bottom: 30px;
+		}
+		
+		#wrapper #left-side input, #wrapper #right-side input, #wrapper #right-side select{
+			margin: 0 0 5px 0;
+		}
+		
+		#wrapper #left-side input[type="number"], #wrapper #left-side label[for="over-twelvе"],
+		#wrapper #left-side label[for="two-twelvе"], #wrapper #left-side label[for="zero-two"]{
+			width: 32%;
+		}
+		
+		#wrapper #right-side input[type="checkbox"]{
+			width: 7%;
+		}
+		
+		#wrapper #right-side label[for="checkbox"]{
+			width: 80%;
+		}
+		
+		#wrapper #right-side input[type="time"] {
+			width: 49%;
+		}
+
+	#wrapper input[type="submit"] {
+		width: 45%;
+		float: right;
+		padding: 5px;
+		margin-right: 16px;
+		font-size: 18px;
+		border: solid 1px #DDDDE0;
+		
+		background: -webkit-linear-gradient(#fff, #DDDDE0); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#fff, #DDDDE0); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#fff, #DDDDE0); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#fff, #DDDDE0); /* Standard syntax */
+	}
+
+			#wrapper input[type="submit"]:hover {
+				background: -webkit-linear-gradient(#DDDDE0, #fff); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(#DDDDE0, #fff); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(#DDDDE0, #fff); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(#DDDDE0, #fff); /* Standard syntax */
+			}
+			
+	#wrapper form:after{
+		clear: both;
+		content: "";
+		-moz-transform: scale(1);
+		-moz-transform-origin: 0 0;
+		-o-transform: scale(1);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(1);
+		-webkit-transform-origin: 0 0;
+		transform: scale(1); /* Standard Property */
+		transform-origin: 0 0;  /* Standard Property */
+		display: block;
+		overflow: auto;
+	}
+	
+	#wrapper form:after{
+		clear: both;
+		content: "";
+		-moz-transform: scale(1);
+		-moz-transform-origin: 0 0;
+		-o-transform: scale(1);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(1);
+		-webkit-transform-origin: 0 0;
+		transform: scale(1); /* Standard Property */
+		transform-origin: 0 0;  /* Standard Property */
+		display: block;
+		overflow: auto;
+	}

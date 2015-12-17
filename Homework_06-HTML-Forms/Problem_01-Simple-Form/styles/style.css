@@ -1,0 +1,231 @@
+body, div, header, h1, p, section, fieldset, legend, span, form, label, input, a{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+fieldset{
+	border: none;
+}
+
+form{
+	padding: 10px;
+}
+
+input{
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #CECECE;
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #CECECE;
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #CECECE;
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #CECECE;
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+body, input[type="submit"]{
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+input[type="submit"]{
+	float: right;
+	margin-top: 10px;
+}
+
+form:after{
+	clear: both;
+	content: "";
+    -moz-transform: scale(1);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(1);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    -webkit-transform-origin: 0 0;
+    transform: scale(1); /* Standard Property */
+    transform-origin: 0 0;  /* Standard Property */
+	display: block;
+	overflow: auto;
+}
+
+form::after{
+	clear: both;
+	content: "";
+    -moz-transform: scale(1);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(1);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    -webkit-transform-origin: 0 0;
+    transform: scale(1); /* Standard Property */
+    transform-origin: 0 0;  /* Standard Property */
+	display: block;
+	overflow: auto;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	background-color: #FFFFF8;
+	width: 100%;
+	margin: 5px 0;
+	padding: 10px 10px 12px 10px;
+	border: solid 1px #CECECE;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+	background-color: #fff;
+	border: solid 1px #359FFF;
+}
+
+input[type="checkbox"] {
+	margin-top: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+input[type="checkbox"]:focus{
+	outline:2px solid #fff;
+}
+
+body #wrapper {
+	width: 65%;
+	background-color: #F4F4F4;
+	margin: 20px auto;
+	padding: 0 10px 25px 10px;
+}
+
+	#wrapper header{
+		padding-left: 10px;
+	}
+
+		#wrapper header h1 {
+			font-size: 27px;
+			color: #264767;
+			padding: 10px 0;
+		}
+
+		#wrapper header p {
+			color: #5F5B55;
+			padding-bottom: 10px;
+		}
+		
+	#wrapper #left, #wrapper #right{
+		vertical-align: top;
+		margin-top: 15px;
+	}
+	
+	#wrapper #left {
+		width: 45%;
+		display: inline-block;
+		margin-left: 27px;
+		padding-top: 20px;
+	}
+
+		#wrapper #left  fieldset legend{
+			text-transform: uppercase;
+			color: gray;
+			font-weight: bold;
+			font-size: 18px;
+			padding: 10px;
+		}
+
+			#wrapper #left  fieldset legend span {
+				color: #264767;
+			}
+			
+				#wrapper #left fieldset form #register {
+					width: 47%;
+					padding: 7px;
+					border: solid 2px #234465;
+					color: #234465;
+				}
+				
+						#wrapper #left fieldset form #register:hover{
+							cursor: pointer;
+							background-color: #234465;
+							color: #fff;
+						}
+
+	#wrapper #right {
+		width:  47%;
+		display: inline-block;
+		background-color: #234465;
+		margin-right: 27px;
+		padding: 10px 10px 60px 10px;
+	}
+	
+		#wrapper #right fieldset  p {
+			width: 100%;
+			display: inline-block;
+			padding: 0 18px 0 0;
+			text-align: right;
+		}
+		
+			#wrapper #right fieldset  p a{
+				color: #fff;
+				font-size: 14px;
+				letter-spacing: 0.5px;
+			}
+		
+				#wrapper #right fieldset a:hover{
+					cursor: pointer;
+					color: #FF9E00;
+				}
+
+		#wrapper #right fieldset legend {
+			text-transform: uppercase;
+			color: #fff;
+			font-weight: bold;
+			padding: 20px 10px;
+			font-size: 18px;
+		}	
+
+			#wrapper #right fieldset form label[for="remember-me"] {
+				display: inline-block;
+				color: white;
+				font-size: 12px;
+				vertical-align: top;
+				margin-top: 10px;
+			}
+			
+					#wrapper #right fieldset form label:hover{
+						cursor: pointer;
+						color: #FF9E00;
+					}
+			
+			#wrapper #right fieldset form #login {
+				width: 39%;
+				padding: 8px;
+				background-color: #264767;
+				border: solid 2px #FF9E00;
+				color: #fff;
+			}
+			
+					#wrapper #right fieldset form #login:hover{
+						cursor: pointer;
+						background-color: #FF9E00;
+						color: #234465;
+					}

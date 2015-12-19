@@ -1,0 +1,201 @@
+body, div, header, span, img, nav, ul, li, a, menu {
+	margin: 0;
+	padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+body {
+	font-family: Tahoma , sans-serif;
+	font-size: 15px;
+}
+
+body header {
+	width: 100%;
+	background-color: #264769;
+	color: #fff;
+}
+
+	#logo {
+		width: 25%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+		header #logo #img-box  {
+				width: 303px;
+				height: 118px;
+				display: inline-block;
+			}
+
+			header #logo #img-box img {
+				width: 100%;
+			}
+
+	header #content {
+		width: 74%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+		header #content #search-box, header #content #nav-bar{
+			width: 100%;
+		}
+		
+			header #content #search-box #notifications-box {
+				width: 64%;
+				display: inline-block;
+				text-align: right;
+			}
+			
+				header #content #search-box #notifications-box a {
+					text-transform: uppercase;
+					text-decoration: none;
+					color: #fff;
+					margin-left: 45px;
+				}
+				
+						header #content #search-box #notifications-box a:hover {
+							color: #FFA500;
+							text-decoration: underline;
+						}
+				
+					header #content #search-box #notifications-box a .glyphicon{
+						font-size: 20px;
+						display: inline-block;
+						vertical-align: sub;
+						margin-left: 3px;
+				}
+		
+		header #content #search-box{
+			margin-bottom: 15px;
+			padding: 15px 0 5px 0;
+		}
+		
+			header #content #search-box form {
+				width: 35%;
+				display: inline-block;
+				vertical-align: bottom;
+			}
+
+				header #content #search-box form input[type="text"]{
+					width: 260px;
+					font-size: 16px;
+					color: #403A2C;
+					padding: 5px 8px;
+					border-radius: 7px 0 0 7px;
+					border: solid 1px transparent;
+					vertical-align: middle;
+					-o-text-overflow: ellipsis;
+					-ms-text-overflow: ellipsis;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+					outline: none;
+				}
+				
+						header #content #search-box form input[type="text"]:focus{
+							border: solid 1px #FFA500;
+						}
+
+				header #content #search-box form button {
+					width: 36px;
+					height: 34px;
+					background-color: #fff;
+					font-size: 18px;
+					color: #264769;
+					border-radius: 0 7px 7px 0;
+					border: solid 1px transparent;
+					border-left-color: #C7C7C7;
+					vertical-align: middle;
+				}
+				
+						header #content #search-box form button:hover{
+							background-color: #FFA500;
+							-webkit-transition: background-color 0.6s;
+							-moz-transition: background-color 0.6s;
+							-ms-transition: background-color 0.6s;
+							-o-transition: background-color 0.6s;
+							transition: background-color 0.6s;
+							border: solid 1px #FFA500;
+							color: #fff;
+							cursor: pointer;
+						}
+
+		header #content #nav-bar{
+			padding-top: 5px;
+		}
+				
+			header #content #nav-bar ul li {
+				list-style-type: none;
+				display: inline-block;
+				padding: 8px 12px;
+				margin: 0 14px;
+				text-transform: uppercase;
+				border-radius: 4px;
+			}
+			
+				header #content #nav-bar ul li a {
+					color: white;
+					text-decoration: none;
+				}
+
+					header #content #nav-bar ul li:hover{
+						background-color: #FFA500;
+						-webkit-transition: background-color 0.6s;
+						-moz-transition: background-color 0.6s;
+						-ms-transition: background-color 0.6s;
+						-o-transition: background-color 0.6s;
+						transition: background-color 0.6s;
+						cursor: pointer;
+					}
+
+				header #content #nav-bar .dropdown-list #courses,
+				header #content #nav-bar .dropdown-list #about {
+					background-color: #162B40;  
+					padding-bottom: 5px;
+					font-size: 12px;	
+					position: absolute;
+					width: 340px;
+					margin-top: 8px;          
+					visibility: hidden;
+					opacity: 0;
+					-webkit-transition: visibility 0s, opacity 0.9s linear;
+					-moz-transition: visibility 0s, opacity 0.9s linear;
+					-ms-transition: visibility 0s, opacity 0.9s linear;
+					-o-transition: visibility 0s, opacity 0.9s linear;
+					transition: visibility 0s, opacity 0.9s linear;
+				}
+
+				header #content #nav-bar .dropdown-list #about {
+					width: 280px;
+				}
+
+					header #content #nav-bar #courses li ,
+					header #content #nav-bar #about li {
+						width: 80%;
+						border-bottom: 1px solid #376587;
+						border-radius: 0;
+						text-transform: none;
+						border-radius: 4px;
+					}
+					
+					header #content #nav-bar .dropdown-list .title-nav {
+						font-size: 15px;
+						text-transform: uppercase;
+						color: #4CA0DB;
+					}
+					
+						header #content #nav-bar ul li:hover> #courses,
+						header #content #nav-bar ul li:hover> #about{
+							visibility: visible;
+							opacity: 1;
+						}
+
+					header #content #nav-bar ul #courses li:last-child,
+					header #content #nav-bar ul #about li:last-child {
+						border-color: #234465;
+					}

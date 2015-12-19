@@ -1,0 +1,343 @@
+body, div, header, section, article, aside, h1, h2, h3, h4, nav, ul, li, a, p, span, img, footer {
+	margin: 0;
+	padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+	background-color: #101415;
+	font-family: Arial, sana-serif;
+	font-size: 15px;
+	color: #5D5754;
+}
+
+body #wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+	#wrapper> header {
+		width: 100%;
+		height: 270px;
+		background-image: url(../resources/headerBackground.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+		#wrapper> header h1 {
+			color: #fff;
+			font-size: 29px;
+			text-align: right;
+			padding-top: 200px;
+			margin-right: 60px;
+		}
+		
+	#wrapper #main {
+		width: 100%;
+		background-color: #fff;
+	}
+		
+		#wrapper #main nav {
+			width: 100%;
+			background: -webkit-linear-gradient(#fff, lightgray); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#fff, lightgray); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#fff, lightgray); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#fff, lightgray);
+			border-bottom: ridge 1px #fff;
+			box-shadow: 1px 5px  5px lightgray;
+			margin-bottom: 20px;
+		}
+		
+			#wrapper #main nav ul li {
+				display: inline-block; 
+			}
+			
+				#wrapper #main nav ul li a {
+					display: inline-block;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 16px;
+					font-weight: bold;
+					color: #5D5754;
+					padding: 15px 28px;
+					border: ridge 1px #fff;
+					border-bottom: none;
+					border-left: none;
+				}
+				
+					#wrapper #main nav ul li a:hover {
+						background-color: #B8B8B8;
+						-webkit-transition: background-color 1.3s;
+						-moz-transition: background-color 1.3s;
+						-ms-transition: background-color 1.3s;
+						-o-transition: background-color 1.3s;
+						transition: background-color 1.3s;
+						color: #fff;
+					}
+
+	#wrapper footer {
+		width: 100%;
+		background-color: #8BC523;
+		padding: 20px 0 30px 100px;
+	}
+
+		#wrapper footer p {
+			font-size: 13px;
+			color: #101415;
+		}
+
+			#wrapper footer p a {
+				color: #101415;
+			}
+			
+				#wrapper footer p a:hover {
+					color: #fff;
+					cursor: pointer;
+				}
+
+
+		#wrapper #main section {
+			width: 70%;
+			display: inline-block;
+			vertical-align: top;
+			padding: 10px 40px;
+		}
+		
+			#wrapper #main section header{
+				border: solid 1px #B8B8B8;
+				border-radius: 8px;
+				padding: 15px;
+				font-size: 13px;
+			}
+		
+				#wrapper #main section header h2 {
+					text-transform: uppercase;
+					font-size: 24px;
+					color: #8BC523;
+					padding: 2px 0 10px 0;
+				}
+			
+				#wrapper #main section header p span {
+					font-weight: bold;
+				}
+
+			#wrapper #main section article {
+				width: 100%;
+				border: solid 1px #B8B8B8;
+				border-radius: 8px;
+				margin: 20px 0;
+				padding: 15px;
+				font-size: 12px;
+			}
+
+					#wrapper #main section article h3 {
+						text-transform: capitalize;
+						font-size: 23px;
+						color: #8BC523;
+					}
+					
+					#wrapper #main section article .img-box, #wrapper #main section article .text{
+						display: inline-block;
+						vertical-align: top;
+					}
+					
+					#wrapper #main section article .img-box{
+						width: 145px;
+						margin: 15px 5px 5px 5px;
+					}
+					
+						#wrapper #main section article .img-box img{
+							width: 100%;
+						}
+					
+					#wrapper #main section article .text{
+						width: 60%;
+					}
+					
+						#wrapper #main section article .text h4{
+							text-transform: capitalize;
+							font-size: 14px;
+							margin: 10px 0 8px 0;
+						}
+
+		#wrapper #main aside {
+			width: 26%;
+			display: inline-block;
+			vertical-align: top;
+			padding: 10px;
+		}
+		
+			#wrapper #main aside article{
+				border: solid 1px #B8B8B8;
+				border-radius: 8px;
+				margin-bottom: 20px;
+				padding: 15px;
+				font-size: 12px;
+			}
+			
+			#wrapper #main aside article:nth-child(1){
+				background-color: #DFDFDF;
+			}
+		
+			#wrapper #main aside article h3 {
+				text-transform: uppercase;
+				font-size: 24px;
+				color: #8BC523;
+				padding: 2px 0 10px 0;
+			}
+			
+			#wrapper #main aside article time{
+				font-weight: bold;
+			}
+
+			#wrapper #main aside article a {
+			display: block;
+			color: #8BC523;
+			margin-bottom: 13px;
+			}
+			
+				#wrapper #main aside article a:hover{
+					color: #334400;
+					cursor: pointer;
+				}
+			
+			#wrapper #main aside article:nth-child(2) a {
+				margin-top: 15px;
+			}
+			
+			#wrapper #main aside article:nth-child(2) p span {
+				font-weight: bold;
+			}
+			
+			
+@media screen and (max-width: 760px) {
+	#wrapper,
+	#wrapper #main section,
+	#wrapper #main aside {
+		width: 100%;
+	}
+	
+		#wrapper> header {
+			height: 220px;
+		}
+	
+		#wrapper> header h1{
+			margin: 0 20px 0 0;
+			padding-top: 210px;
+		}
+	
+		#wrapper #main nav{
+			width: 50%;
+			margin-top: 50px;
+		}
+		
+			#wrapper #main nav ul li{
+				width: 100%;
+				padding-left: 10px;
+			}
+			
+				#wrapper #main nav ul li a{
+					width: 100%;
+					font-size: 14px;
+					padding: 8px;
+					background-color: #F1F1F1;
+				}
+	
+	#wrapper #main section{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+			#wrapper #main section article> div{
+				border-top: solid 1px #B8B8B8;
+				margin-top: 10px;
+			}
+	
+			#wrapper #main section article .img-box{
+				width: 30%;
+			}
+			/*#wrapper #main section article .text{
+				width: 60%;
+			}*/
+	
+	#wrapper #main aside{
+		padding: 5px;
+	}
+	
+		#wrapper #main aside article{
+			width: 49.4%;
+			display: inline-block;
+			vertical-align: top;
+		}
+}
+
+@media screen and (max-width: 560px) {
+#wrapper{
+	font-size: 14px;
+}
+
+	#wrapper> header {
+			height: 170px;
+		}
+
+		#wrapper> header h1{
+			font-size: 25px;
+			text-align: center;
+			margin-right: 0;
+			padding-top: 160px;
+		}
+
+			#wrapper #main nav ul li{
+				text-align: right;
+				padding-right: 10px;
+				padding-left: 0;
+			}
+		
+			#wrapper #main section header h2 {
+				font-size: 19px;
+			}
+			
+			#wrapper #main section article .text h4 {
+				margin-top: 0;
+			}
+			
+			#wrapper #main section article .img-box{
+				width: 100%;
+				text-align: center;
+				margin-bottom: 0;
+			}
+				#wrapper #main section article .img-box img{
+					width: 40%;
+				}
+			
+			#wrapper #main section article .text{
+					width: 100%;
+				}
+			
+		#wrapper #main aside{
+			padding-bottom: 20px;
+		}
+	
+			#wrapper #main aside article{
+				width: 100%;
+				margin-top: 15px;
+				text-align: center;
+			}
+			
+				#wrapper #main aside article h3, #wrapper #main section article h3 {
+					font-size: 18px;
+				}
+			
+	#wrapper  footer{
+		padding-left: 0;
+		text-align: center;
+	}
+	
+		#wrapper  footer p{
+			font-size: 11px;
+		}
+}

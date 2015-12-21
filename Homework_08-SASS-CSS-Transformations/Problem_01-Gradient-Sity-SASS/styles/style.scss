@@ -1,0 +1,327 @@
+﻿$gray: #828282;
+$white: #fff;
+$purple-start: #390a39;
+$purple-end: #f4e3f4;
+$blue-start: #0d0db4;
+$blue-end: #e4e4fb;
+$green-start: #083708;
+$green-end: #e8f8e8;
+$yellow-start: #f6f608;
+$yellow-end: #fefed5;
+$orange-start: #ec970c;
+$orange-end: #fef9d4;
+$red-start: #cf0a0a;
+$red-end: #fee2e2;
+
+@mixin linear-gradient-top-to-bottom($color1, $color2) {
+    /*Linear Gradient - Top to Bottom */
+    background: $color1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( $color1, $color2 ); /* For Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient( $color1, $color2 ); /* For Firefox 3.6 to 15 */
+    background: -ms-linear-gradient( $color1, $color2 ); /*For IE10*/
+    background: -o-linear-gradient( $color1, $color2 ); /* For Opera 11.1 to 12.0 */
+    background: linear-gradient( $color1, $color2 ); /* Standard syntax (must be last) */
+}
+
+@mixin vertical-gradient-top-to-bottom($color1, $color2) {
+    /*Linear Gradient - Top to Bottom */
+    background: $color1;
+    background: -webkit-linear-gradient( $color1 10%, $color2 100%);
+    background: -moz-linear-gradient( $color1 10%, $color2 100%);
+    background: -ms-linear-gradient( $color1 10%, $color2 100%);
+    background: -o-linear-gradient( $color1 10%, $color2 100%);
+    background: linear-gradient( $color1 10%, $color2 100%);
+}
+
+@mixin horizontal-gradient-left-to-right($color1, $color2) {
+    /*Linear Gradient - Left to Right */
+    background: $color1;
+    background: -webkit-linear-gradient(left, $color1 10%, $color2 100%);
+    background: -moz-linear-gradient(right, $color1 10%, $color2 100%);
+    background: -ms-linear-gradient(left, $color1 10%, $color2 100%);
+    background: -o-linear-gradient(right, $color1 10%, $color2 100%);
+    background: linear-gradient(to right, $color1 10%, $color2 100%);
+}
+
+@mixin diagonal-gradient-top-left-to-bottom-right($color1, $color2) {
+    /*Diagonal -> top left-to bottom right */
+    background: $color1;
+    background: -moz-linear-gradient( bottom right, $color1 10%, $color2 100%);
+    background: -webkit-linear-gradient( left top, $color1 10%, $color2 100%);
+    background: -o-linear-gradient( bottom right, $color1 10%, $color2 100%);
+    background: -ms-linear-gradient(-45deg, $color1 10%, $color2 100%);
+    background: linear-gradient( to bottom right, $color1 10%, $color2 100%);
+}
+
+@mixin radial-gradient-default($color1, $color2) {
+    /*------Radial Gradient - Evenly Spaced Color Stops (this is default)------*/
+    background: $color1;
+    background: -moz-radial-gradient( $color1 10%, $color2 100%);
+    background: -webkit-radial-gradient( $color1 10%, $color2 100%);
+    background: -o-radial-gradient( $color1 10%, $color2 100%);
+    background: -ms-radial-gradient( $color1 10%, $color2 100%);
+    background: radial-gradient( $color1 10%, $color2 100%);
+}
+
+body, div, header, h1, h2, h3, nav, ul, li, a, section, article, footer {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 16px;
+    @include linear-gradient-top-to-bottom($gray, $white);
+
+    #wrapper {
+        max-width: 880px;
+        border: 5px double #B1B1B1;
+        background-color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+
+        & > header {
+            border: 3px double #B1B1B1;
+            padding-bottom: 10px;
+
+            h1 {
+                color: #808080;
+                font-size: 2.6em;
+                padding: 5px 0 10px 0;
+            }
+
+            nav ul li {
+                display: inline-block;
+                border: 1px solid #B1B1B1;
+                margin: 0 30px;
+
+                a {
+                    color: #959595;
+                    padding: 10px 20px;
+                    border: 1px solid #B1B1B1;
+                    display: block;
+                    margin: 1px;
+                    text-decoration: none;
+                    font-size: 1.3em;
+
+                    &:hover {
+                        color: $white;
+                        border: 1px solid transparent;
+                        @include linear-gradient-top-to-bottom($gray, $white);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        section {
+            margin-top: 20px;
+            border: 3px double #B1B1B1;
+
+            & > header h1 {
+                text-align: center;
+                color: #80808F;
+                font-size: 1.6em;
+                text-decoration: underline;
+                padding-top: 10px;
+            }
+
+            article {
+                border: 1px solid #B1B1B1;
+                margin: 20px;
+                padding: 15px 10px;
+
+                header h2 {
+                    text-align: center;
+                    color: #80808F;
+                    font-size: 1.3em;
+                    font-weight: normal;
+                    margin: 0 0 10px 0;
+                }
+
+                .innerContainer .purple,
+                .innerContainer .blue,
+                .innerContainer .green,
+                .innerContainer .yellow,
+                .innerContainer .orange,
+                .innerContainer .red {
+                    width: 122px;
+                    height: 135px;
+                    display: inline-block;
+                    border-radius: 15px;
+                    margin-left: -6.6px;
+                }
+            }
+        }
+        /* Verical Gradient*/
+        .linear article:first-of-type .innerContainer .purple {
+            @include vertical-gradient-top-to-bottom($purple-start, $purple-end);
+        }
+
+        .linear article:first-of-type .innerContainer .blue {
+            @include vertical-gradient-top-to-bottom($blue-start, $blue-end);
+        }
+
+        .linear article:first-of-type .innerContainer .green {
+            @include vertical-gradient-top-to-bottom($green-start, $green-end);
+        }
+
+        .linear article:first-of-type .innerContainer .yellow {
+            @include vertical-gradient-top-to-bottom($yellow-start, $yellow-end);
+        }
+
+        .linear article:first-of-type .innerContainer .orange {
+            @include vertical-gradient-top-to-bottom($orange-start, $orange-end);
+        }
+
+        .linear article:first-of-type .innerContainer .red {
+            @include vertical-gradient-top-to-bottom($red-start, $red-end);
+        }
+        /* Horizontal Gradient */
+        .linear article:nth-of-type(2) div.innerContainer div.purple {
+            @include horizontal-gradient-left-to-right($purple-start, $purple-end);
+        }
+
+        .linear article:nth-of-type(2) div.innerContainer div.blue {
+            @include horizontal-gradient-left-to-right($blue-start, $blue-end);
+        }
+
+        .linear article:nth-of-type(2) div.innerContainer div.green {
+            @include horizontal-gradient-left-to-right($green-start, $green-end);
+        }
+
+        .linear article:nth-of-type(2) div.innerContainer div.yellow {
+            @include horizontal-gradient-left-to-right($yellow-start, $yellow-end);
+        }
+
+        .linear article:nth-of-type(2) div.innerContainer div.orange {
+            @include horizontal-gradient-left-to-right($orange-start, $orange-end);
+        }
+
+        .linear article:nth-of-type(2) div.innerContainer div.red {
+            @include horizontal-gradient-left-to-right($red-start, $red-end);
+        }
+        /* Diagonal Gradient */
+        .linear article:nth-of-type(3) div.innerContainer div.purple {
+            @include diagonal-gradient-top-left-to-bottom-right($purple-start, $purple-end);
+        }
+
+        .linear article:nth-of-type(3) div.innerContainer div.blue {
+            @include diagonal-gradient-top-left-to-bottom-right($blue-start, $blue-end);
+        }
+
+        .linear article:nth-of-type(3) div.innerContainer div.green {
+            @include diagonal-gradient-top-left-to-bottom-right($green-start, $green-end);
+        }
+
+        .linear article:nth-of-type(3) div.innerContainer div.yellow {
+            @include diagonal-gradient-top-left-to-bottom-right($yellow-start, $yellow-end);
+        }
+
+        .linear article:nth-of-type(3) div.innerContainer div.orange {
+            @include diagonal-gradient-top-left-to-bottom-right($orange-start, $orange-end);
+        }
+
+        .linear article:nth-of-type(3) div.innerContainer div.red {
+            @include diagonal-gradient-top-left-to-bottom-right($red-start, $red-end);
+        }
+        /* Radial Gradient */
+        .radial article:first-of-type .innerContainer .purple {
+            @include radial-gradient-default($purple-start, $purple-end);
+        }
+
+        .radial article:first-of-type .innerContainer .blue {
+            @include radial-gradient-default($blue-start, $blue-end);
+        }
+
+        .radial article:first-of-type .innerContainer .green {
+            @include radial-gradient-default($green-start, $green-end);
+        }
+
+        .radial article:first-of-type .innerContainer .yellow {
+            @include radial-gradient-default($yellow-start, $yellow-end);
+        }
+
+        .radial article:first-of-type .innerContainer .orange {
+            @include radial-gradient-default($orange-start, $orange-end);
+        }
+
+        .radial article:first-of-type .innerContainer .red {
+            @include radial-gradient-default($red-start, $red-end);
+        }
+
+        footer {
+            text-align: center;
+
+            h3 {
+                color: #80808F;
+                text-decoration: underline;
+                font-size: 1.3em;
+                margin: 10px 0;
+            }
+
+            ul li {
+                list-style: none;
+                margin: 2px 0;
+
+                a {
+                    color: #B1B1B1;
+                    text-decoration: none;
+                    font-size: 1.1em;
+                    padding: 4px;
+
+                    &:hover {
+                        color: $white;
+                        text-decoration: underline;
+                        border-radius: 5px;
+                        @include linear-gradient-top-to-bottom($white, $gray);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 15px;
+
+        #wrapper, #wrapper section {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        #wrapper section article {
+            width: 100%;
+            margin: 10px 0;
+
+            .innerContainer {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    body {
+        font-size: 14px;
+
+        #wrapper > header nav ul {
+            width: 55%;
+            margin: 0 auto;
+            padding: 0;
+
+            li {
+                display: block;
+                width: 100%;
+                margin: 1px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+﻿@mixin border($color) {
+    border: solid 1px $color;
+}
+
+@mixin link-hover($color, $border-color) {
+    color: $color;
+    text-decoration: underline;
+    @include border($border-color);
+}
+
+.extend{
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+body, header, footer, section, article, h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    font-family: Arial, sans-serif;
+    header:first-of-type {
+        @include border(black);
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            @extend .extend;
+        }
+
+        margin-bottom: 50px;
+    }
+
+    section {
+        @include border(black);
+        width: 70%;
+        margin: 0 auto;
+
+        header {
+            @include border(gray);
+            margin-bottom: 10px;
+
+            h2 {
+                color: green;
+            }
+        }
+
+        article {
+            @include border(pink);
+            display: inline-block;
+            width: 48%;
+            margin: 5px;
+            vertical-align: top;
+        }
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px 20px;
+        @include border(black);
+
+        p {
+            display: inline-block;
+            width: 45%;
+            text-align: center;
+        }
+
+        nav {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: white;
+
+                    &:hover {
+                        @include link-hover(black, white);
+                    }
+                }
+
+                &:nth-child(3) > a {
+                    color: yellow;
+
+                    &:hover {
+                        @include link-hover(white, black);
+                    }
+                }
+            }
+        }
+    }
+}

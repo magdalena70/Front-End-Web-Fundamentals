@@ -1,0 +1,208 @@
+@font-face{
+	font-family: "Left Hand Comic";
+	src: url('fonts/left hand comic.ttf');
+}
+
+body, div, img, h1{
+	margin: 0;
+	padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+	background-color: #101415;
+	font-family: "Left Hand Comic";
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 3px 3px #000;
+}
+
+body div{
+	border-radius: 15px 0 0 0;
+}
+
+body #wrapper {
+	max-width: 650px;
+	text-align: center;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #464646;
+	box-shadow: 5px 5px 20px #fff;
+}
+
+	#wrapper #content {
+		width: 90%;
+		text-align: center;
+		margin: auto;
+		background-color: #B8B8B8;
+		box-shadow: 3px 3px 10px #fff;
+	}
+
+		#wrapper> #content> div {
+			width: 150px;
+			height: 110px;
+			display: inline-block;
+			vertical-align: top;
+			margin: 2%;
+		}
+
+			#wrapper> #content> div> img {
+				width: 100%;
+				border: solid 1px #fff;
+				border-radius: 15px 0 0 0;
+				box-shadow: 5px 5px  #fff;
+			}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes move-wrapper{
+    0% {
+        -webkit-transform: translate(3px, 1px) rotate(0deg);
+    }
+
+    15% {
+        -webkit-transform: translate(-5px, 0px) rotate(-10deg);
+    }
+
+    30% {
+        -webkit-transform: translate(3px, -1px) rotate(10deg);
+    }
+
+    45% {
+        -webkit-transform: translate(-2px, 1px) rotate(0deg);
+    }
+	
+	60% {
+        -webkit-transform: translate(2px, -3px) rotate(-10deg);
+    }
+
+    75% {
+        -webkit-transform: translate(-2px, 0px) rotate(10deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, -1px) rotate(0deg);
+    }
+}
+
+	body #wrapper:hover {
+		position: relative;
+		background: -webkit-linear-gradient(#fff, #101415, #fff); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#fff, #101415, #fff); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#fff, #101415, #fff); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#fff, #101415, #fff); /* Standard syntax */
+		color: #000;
+		text-shadow: 3px 3px #fff;
+		-webkit-animation-name: move-wrapper;
+		-webkit-animation-delay: 0.0s;
+		-webkit-animation-duration: 0.3s;
+		-webkit-transform-origin: 50% 50%;
+		-webkit-animation-iteration-count: initial;
+		-webkit-animation-timing-function: linear;
+	}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes RotateContent{
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: translate(10px, -30px) rotate(90deg);
+    }
+
+    50% {
+        -webkit-transform: translate(10px, -30px) rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+		#wrapper> #content:hover {
+			position: relative;
+			background: -webkit-linear-gradient(#fff, #101415, #fff); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(#fff, #101415, #fff); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(#fff, #101415, #fff); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(#fff, #101415, #fff); /* Standard syntax */
+			-webkit-animation-name: RotateContent;
+			-webkit-animation-delay: 0.1s;
+			-webkit-animation-duration: 2.7s;
+			-webkit-animation-timing-function: ease;
+			-webkit-animation-iteration-count: 2;
+		}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes move-car{
+    0% {
+        -webkit-transform: translate(6px, 0px) rotate(0deg);
+    }
+
+    15% {
+        -webkit-transform: translate(-5px, -5px) rotate(-4deg);
+    }
+
+    30% {
+        -webkit-transform: translate(3px, 0px) rotate(5deg);
+    }
+
+    45% {
+        -webkit-transform: translate(0px, 4px) rotate(0deg);
+    }
+	
+	60% {
+        -webkit-transform: translate(-5px, 0px) rotate(-2deg);
+    }
+
+    75% {
+        -webkit-transform: translate(-2px, 0px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px) rotate(-1deg);
+    }
+}
+
+			#wrapper> #content> div:hover {
+				position: relative;
+				background: -webkit-radial-gradient(#fff, #101415, #fff); /* Safari 5.1 to 6.0 */
+				background: -o-radial-gradient(#fff, #101415, #fff); /* For Opera 11.6 to 12.0 */
+				background: -moz-radial-gradient(#fff, #101415, #fff); /* For Firefox 3.6 to 15 */
+				background: radial-gradient(#fff, #101415, #fff); /* Standard syntax */
+				-webkit-animation-name: move-car;
+				-webkit-animation-delay: 0.0s;
+				-webkit-animation-duration: 0.9s;
+				-webkit-transform-origin: 50% 50%;
+				-webkit-animation-iteration-count: initial;
+				-webkit-animation-timing-function: linear;
+			}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes RotateCar{
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: translate(0px, 15px) rotate(90deg);
+        width: 50%;
+        height: 50%;
+    }
+
+    50% {
+        -webkit-transform: translate(15px, 15px) rotate(360deg);
+        width: 300%;
+        height: 300%;
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+			#wrapper> #content> div> img:hover {
+				position: relative;
+				-webkit-animation-name: RotateCar;
+				-webkit-animation-delay: 1.0s;
+				-webkit-animation-duration: 3.7s;
+				-webkit-animation-timing-function: ease;
+			}

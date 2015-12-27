@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Find Job</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Search Business </a></li>
+                    <li><a href="#">Business Categories </a></li>
+                    <li><a href="#">Recent Locations </a></li>
+                    <li><a href="#">Agents Located</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form method="get" action="index.html">
+            <label for="name">Business Name</label>
+            <label for="search-country">Country</label>
+            <label for="search-city">City / State</label>
+            <label for="pstal-code">ZIP / Postal Code</label>
+            <input type="text" id="name" name="name" placeholder="enter a name" required="required" />
+            <input type="search" id="search-country" name="search-country" placeholder="search by country" required="required" />
+            <input type="search" id="search-city" name="search-city" placeholder="search by city or state" />
+            <input type="text" id="pstal-code" name="postal-code" placeholder="enter a postal code" />
+            <label>Employers</label>
+            <label>Startup Date</label>
+            <label>Job Opportunity</label>
+            <input type="text" id="employers" name="employers" placeholder="1000-5000" />
+            <input type="date" id="startup-date" name="startup-date" />
+            <input type="text" id="job-pportunity" name="job-opportunity" placeholder="any"/>
+            <input type="submit" value="LET'S FIND YOUR JOB" />
+        </form>
+    </div>
+</body>
+</html>

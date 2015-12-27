@@ -1,0 +1,141 @@
+﻿body, div, header, nav, ul, li, a, form, label, input {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin add-image($image-url) {
+    content: url($image-url);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin input-overflow-property {
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+    #wrapper {
+        max-width: 1020px;
+        margin: 0 auto;
+        background-color: #EEEEEE;
+
+        header {
+            background-color: #384452;
+            width: 100%;
+
+            nav {
+                ul {
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+
+                        a {
+                            display: inline-block;
+                            vertical-align: middle;
+                            text-decoration: none;
+                            padding: 25px 20px 25px 45px;
+                            color: #99BAC9;
+                            position: relative;
+                        }
+
+                        &:first-of-type > a {
+                            color: #fff;
+                            background-color: #39BA9C;
+
+                            &:before {
+                                @include add-image('../images/03-tab01.png');
+                            }
+                        }
+
+                        &:nth-of-type(2) > a:before {
+                            @include add-image('../images/03-tab02.png');
+                        }
+
+                        &:nth-of-type(3) > a:before {
+                            @include add-image('../images/03-tab03.png');
+                        }
+
+                        &:last-of-type > a:before {
+                            @include add-image('../images/03-tab04.png');
+                        }
+                    }
+                }
+            }
+        }
+
+        form {
+            padding: 40px;
+
+            label {
+                display: inline-block;
+                width: 22%;
+                margin: 0 9px;
+                font-weight: bold;
+
+                &:last-of-type {
+                    width: 48%;
+                }
+            }
+
+            input {
+                display: inline-block;
+                width: 22%;
+                padding: 15px;
+                margin: 15px 9px 20px 9px;
+                font-size: 15px;
+                border: solid 1px #CCCCCC;
+                outline: none;
+                @include input-overflow-property;
+
+                &[type="date"] {
+                    padding: 12px 15px;
+
+                    &::-webkit-clear-button {
+                        display: none;
+                    }
+                }
+
+                &[type="search"] {
+                    -webkit-appearance: textfield;
+
+                    &::-webkit-search-decoration,
+                    &::-webkit-search-cancel-button {
+                        -webkit-appearance: none;
+                    }
+                }
+
+                &[type="submit"] {
+                    background-color: #39BA9C;
+                    font-size: 14px;
+                    color: #fff;
+                    border: solid 1px #39BA9C;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: #384452;
+                        border-color: #384452;
+                        cursor: pointer;
+                    }
+                }
+
+                &:focus {
+                    background-color: #ffffcc;
+                    border: solid 1px #99BAC9;
+                }
+            }
+        }
+    }
+}

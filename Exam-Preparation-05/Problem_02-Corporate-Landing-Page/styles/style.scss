@@ -1,0 +1,305 @@
+﻿/* latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://fonts.gstatic.com/s/ubuntu/v8/_aijTyevf54tkVDLy-dlnFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v8/sDGTilo5QRsfWu6Yc11AXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://fonts.gstatic.com/s/ubuntu/v8/0ihfXUL2emPh0ROJezvraFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('fonts/MYRIADPRO-REGULAR.OTF');
+}
+
+$logo-url: '../images/02-Icons-Sprite.png';
+
+@mixin article-logo-box-property($logo-url, $position-x, $position-y) {
+    width: 150px;
+    height: 130px;
+    background-image: url($logo-url);
+    background-position: $position-x $position-y;
+}
+
+body, header, footer, section, article, h1, h2, h3, h4, p, img, div {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Myriad Pro';
+    font-size: 13px;
+    color: #6B799E;
+
+    #wrapper {
+        width: 100%;
+
+        & > header {
+            width: 100%;
+            padding: 15px 10px 15px 40px;
+            background-color: #517AA8;
+            border-bottom: solid 1px #58EEFF;
+
+            #small-slogan {
+                display: inline-block;
+                width: 40%;
+                padding-left: 30px;
+
+                a {
+                    font-family: Ubuntu;
+                    font-size: 16px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+
+            nav {
+                display: inline-block;
+                width: 55%;
+                text-align: right;
+
+                ul {
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+
+                        a {
+                            font-family: Ubuntu;
+                            font-size: 13px;
+                            color: #fff;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            padding: 10px;
+
+                            &:hover {
+                                cursor: pointer;
+                                color: #56EFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            margin: 0 auto;
+
+            & > header {
+                background-color: #517AA8;
+                padding: 50px 15px 5px 15px;
+                text-align: center;
+
+                h1 {
+                    font-family: Ubuntu;
+                    font-size: 60px;
+                    color: #58EEFF;
+                    letter-spacing: 8px;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 20px;
+                    word-spacing: 5px;
+                }
+
+                #title {
+                    font-family: Ubuntu;
+                    font-size: 54px;
+                    font-weight: 300;
+                    word-spacing: 0.5px;
+                    color: #fff;
+                    margin: 30px 0;
+                }
+
+                button {
+                    width: 19%;
+                    padding: 15px;
+                    margin: 30px 0 30px 0;
+                    background-color: transparent;
+                    border: solid 1px #fff;
+                    font-family: Ubuntu;
+                    color: #fff;
+                    font-size: 24px;
+                }
+
+                p > a {
+                    font-family: 'Myriad Pro';
+                    font-size: 16px;
+                    color: #fff;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #56EFFF;
+                    }
+                }
+            }
+
+            .content {
+                max-width: 1100px;
+                margin: 0 auto;
+
+                article {
+                    header {
+                        padding: 0 0 35px 0;
+
+                        h2 {
+                            font-family: Ubuntu;
+                            font-size: 28px;
+                            font-weight: normal;
+                            text-align: center;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+
+                #article_01 {
+                    div {
+                        display: inline-block;
+                        width: 27%;
+                        margin: 0 30px;
+                        text-align: center;
+
+                        header {
+                            h3 {
+                                font-family: Ubuntu;
+                                font-size: 20px;
+                            }
+                        }
+
+                        p {
+                            margin-bottom: 15px;
+                            line-height: 20px;
+                        }
+
+                        a {
+                            color: #58EEFF;
+                        }
+                    }
+
+                    #options-logo-box {
+                        @include article-logo-box-property($logo-url, left,top);
+                    }
+
+                    #interfaces-logo-box {
+                        @include article-logo-box-property($logo-url, center, top);
+                    }
+
+                    #documentation-logo-box {
+                        @include article-logo-box-property($logo-url, right, top);
+                    }
+                }
+
+                #article_02 {
+                    div {
+                        display: inline-block;
+                        width: 44%;
+                        margin: 0 25px;
+                        background-color: #F7F8FA;
+
+                        .img-box {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 220px;
+                            margin: 0 5px 0 0;
+
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+
+                        .article-content {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 52%;
+                            margin: 0;
+                            line-height: 20px;
+
+                            h3 {
+                                margin: 15px 0;
+                            }
+                        }
+                    }
+                }
+
+                #article_03 {
+                    text-align: center;
+                    padding: 0 160px;
+
+                    header {
+                        h2 {
+                        }
+                    }
+
+                    p {
+                        font-family: 'Myriad Pro';
+                        font-size: 16px;
+                        font-style: italic;
+                        margin: 20px;
+                    }
+
+                    a {
+                        color: #84CCD8;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        #article-footer {
+            width: 100%;
+            padding: 20px;
+            margin: 30px 0;
+            background-color: #FF7978;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px 0;
+            margin-top: 40px;
+            background-color: #282E3C;
+
+
+            p {
+                display: inline-block;
+                font-family: 'Myriad Pro';
+                font-size: 12px;
+                color: #6F6059;
+            }
+
+            :first-child {
+                width: 70%;
+                margin-left: 100px;
+            }
+
+            :last-child {
+                width: 20%;
+                text-align: center;
+            }
+        }
+    }
+}

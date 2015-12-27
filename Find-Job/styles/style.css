@@ -1,0 +1,146 @@
+﻿body, div, header, nav, ul, li, a, form, label, input {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+    body #wrapper {
+        max-width: 1020px;
+        margin: 0 auto;
+        background-color: #EEEEEE;
+    }
+
+        body #wrapper header {
+            background-color: #384452;
+            width: 100%;
+        }
+
+            body #wrapper header nav ul li {
+                list-style-type: none;
+                display: inline-block;
+            }
+
+                body #wrapper header nav ul li a {
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-decoration: none;
+                    padding: 25px 20px 25px 45px;
+                    color: #99BAC9;
+                    position: relative;
+                }
+
+                body #wrapper header nav ul li:first-of-type > a {
+                    color: #fff;
+                    background-color: #39BA9C;
+                }
+
+                    body #wrapper header nav ul li:first-of-type > a:before {
+                        content: url("../images/03-tab01.png");
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                body #wrapper header nav ul li:nth-of-type(2) > a:before {
+                    content: url("../images/03-tab02.png");
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                body #wrapper header nav ul li:nth-of-type(3) > a:before {
+                    content: url("../images/03-tab03.png");
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                body #wrapper header nav ul li:last-of-type > a:before {
+                    content: url("../images/03-tab04.png");
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+        body #wrapper form {
+            padding: 40px;
+        }
+
+            body #wrapper form label {
+                display: inline-block;
+                width: 22%;
+                margin: 0 9px;
+                font-weight: bold;
+            }
+
+                body #wrapper form label:last-of-type {
+                    width: 48%;
+                }
+
+            body #wrapper form input {
+                display: inline-block;
+                width: 22%;
+                padding: 15px;
+                margin: 15px 9px 20px 9px;
+                font-size: 15px;
+                border: solid 1px #CCCCCC;
+                outline: none;
+                -o-text-overflow: ellipsis;
+                -ms-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+                body #wrapper form input[type="date"] {
+                    padding: 12px 15px;
+                }
+
+                    body #wrapper form input[type="date"]::-webkit-clear-button {
+                        display: none;
+                    }
+
+                body #wrapper form input[type="search"] {
+                    -webkit-appearance: textfield;
+                }
+
+                    body #wrapper form input[type="search"]::-webkit-search-decoration,
+                    body #wrapper form input[type="search"]::-webkit-search-cancel-button {
+                        -webkit-appearance: none;
+                    }
+
+                body #wrapper form input[type="submit"] {
+                    background-color: #39BA9C;
+                    font-size: 14px;
+                    color: #fff;
+                    border: solid 1px #39BA9C;
+                    border-radius: 5px;
+                }
+
+                    body #wrapper form input[type="submit"]:hover {
+                        background-color: #384452;
+                        border-color: #384452;
+                        cursor: pointer;
+                    }
+
+                body #wrapper form input:focus {
+                    background-color: #ffffcc;
+                    border: solid 1px #99BAC9;
+                }
+
+/*# sourceMappingURL=style.css.map */

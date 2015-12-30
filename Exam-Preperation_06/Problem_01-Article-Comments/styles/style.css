@@ -1,0 +1,135 @@
+﻿body, div, section, article, header, h1, h2, p, a, button {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #282E3C;
+}
+
+body #wrapper {
+  width: 658px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+body #wrapper section {
+  width: 648px;
+}
+
+body #wrapper section > header {
+  padding: 10px 0;
+}
+
+body #wrapper section article {
+  border-bottom: solid 1px #CCCCCC;
+  padding: 13px 0;
+}
+
+body #wrapper section article header {
+  padding-bottom: 10px;
+}
+
+body #wrapper section article header .img-box {
+  display: inline-block;
+  width: 36px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+body #wrapper section article header .img-box img {
+  max-width: 100%;
+}
+
+body #wrapper section article header .article-title {
+  display: inline-block;
+  width: 72%;
+  vertical-align: top;
+}
+
+body #wrapper section article header .article-title h2 {
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+
+body #wrapper section article header .article-title .date {
+  color: #999999;
+  font-weight: bold;
+}
+
+body #wrapper section article header .vote {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  text-align: right;
+}
+
+body #wrapper section article header .vote button {
+  width: 17px;
+  height: 17px;
+  margin-left: 8px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+body #wrapper section article header .vote button:hover {
+  cursor: pointer;
+}
+
+body #wrapper section article header .vote .spam {
+  background-image: url("../images/report-spam.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body #wrapper section article header .vote .up {
+  background-image: url("../images/vote-up.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body #wrapper section article header .vote .down {
+  background-image: url("../images/vote-down.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body #wrapper section article header .vote p {
+  color: #666666;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+body #wrapper section article header .vote .red {
+  color: #ED1C24;
+}
+
+body #wrapper section p {
+  font-size: 12px;
+}
+
+body #wrapper section p a {
+  color: #26292D;
+}
+
+body #wrapper section p a:hover {
+  cursor: pointer;
+  color: #8F989F;
+}
+
+body #wrapper section > article:first-of-type {
+  border-top: solid 1px #CCCCCC;
+}
+
+/*# sourceMappingURL=style.css.map */

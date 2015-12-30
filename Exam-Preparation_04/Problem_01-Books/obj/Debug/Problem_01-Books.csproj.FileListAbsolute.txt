@@ -1,6 +1,0 @@
-C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_01-Books\bin\Problem_01-Books.dll.config
-C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_01-Books\bin\Problem_01-Books.dll
-C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_01-Books\bin\Problem_01-Books.pdb
-C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_01-Books\obj\Debug\Problem_01-Books.csprojResolveAssemblyReference.cache
-C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_01-Books\obj\Debug\Problem_01-Books.dll
-C:\Users\acer\Documents\GitHub\Front-End-Web-Fundamentals\Exam-Preparation_04\Problem_01-Books\obj\Debug\Problem_01-Books.pdb

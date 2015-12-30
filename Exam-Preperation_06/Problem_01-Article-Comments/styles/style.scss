@@ -1,0 +1,131 @@
+﻿body, div, section, article, header, h1, h2, p, a, button {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin article-header-elements-property($width) {
+    display: inline-block;
+    width: $width;
+    vertical-align: top;
+}
+
+@mixin button-background-image($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #282E3C;
+
+    #wrapper {
+        width: 658px;
+        margin: 0 auto;
+        padding: 5px;
+
+        section {
+            width: 648px;
+
+            & > header {
+                padding: 10px 0;
+            }
+
+            article {
+                border-bottom: solid 1px #CCCCCC;
+                padding: 13px 0;
+
+                header {
+                    padding-bottom: 10px;
+
+                    .img-box {
+                        @include article-header-elements-property(36px);
+                        margin-right: 5px;
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+
+                    .article-title {
+                        @include article-header-elements-property(72%);
+
+                        h2 {
+                            font-size: 13px;
+                            padding-bottom: 3px;
+                        }
+
+                        .date {
+                            color: #999999;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .vote {
+                        @include article-header-elements-property(20%);
+                        text-align: right;
+
+                        button {
+                            width: 17px;
+                            height: 17px;
+                            margin-left: 8px;
+                            margin-bottom: 5px;
+                            border: none;
+                            outline: none;
+                            border-radius: 2px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+
+                        .spam {
+                            @include button-background-image('../images/report-spam.jpg');
+                        }
+
+                        .up {
+                            @include button-background-image('../images/vote-up.jpg');
+                        }
+
+                        .down {
+                            @include button-background-image('../images/vote-down.jpg');
+                        }
+
+                        p {
+                            color: #666666;
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 23px;
+                        }
+
+                        .red {
+                            color: #ED1C24;
+                        }
+                    }
+                }
+            }
+
+            p {
+                font-size: 12px;
+
+                a {
+                    color: #26292D;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #8F989F;
+                    }
+                }
+            }
+
+            & > article:first-of-type {
+                border-top: solid 1px #CCCCCC;
+            }
+        }
+    }
+}

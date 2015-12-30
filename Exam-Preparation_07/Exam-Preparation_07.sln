@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Problem_01-Projects-and-Groups", "http://localhost:53676", "{2E54E25E-7AEC-46B3-B662-1F1298637C29}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53676"
+		Debug.AspNetCompiler.PhysicalPath = "Problem_01-Projects-and-Groups\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53676\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53676"
+		Release.AspNetCompiler.PhysicalPath = "Problem_01-Projects-and-Groups\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53676\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Problem_01-Projects-and-Groups\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Problem_02–Simple-Site", "http://localhost:49426", "{E5C0A7D1-9A92-4FCC-997D-CD392F4AA977}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49426"
+		Debug.AspNetCompiler.PhysicalPath = "Problem_02–Simple-Site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49426\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49426"
+		Release.AspNetCompiler.PhysicalPath = "Problem_02–Simple-Site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49426\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Problem_02–Simple-Site\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Problem_03-Registration-Form", "http://localhost:50907", "{C7480E65-4884-407D-8B01-2CD0E98E4CE2}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50907"
+		Debug.AspNetCompiler.PhysicalPath = "Problem_03-Registration-Form\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50907\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50907"
+		Release.AspNetCompiler.PhysicalPath = "Problem_03-Registration-Form\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50907\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Problem_03-Registration-Form\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E54E25E-7AEC-46B3-B662-1F1298637C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E54E25E-7AEC-46B3-B662-1F1298637C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C0A7D1-9A92-4FCC-997D-CD392F4AA977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C0A7D1-9A92-4FCC-997D-CD392F4AA977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7480E65-4884-407D-8B01-2CD0E98E4CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7480E65-4884-407D-8B01-2CD0E98E4CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

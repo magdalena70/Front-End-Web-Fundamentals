@@ -1,0 +1,228 @@
+﻿@font-face {
+    font-family: Raleway;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+body, div, header, h1, h2, h3, section, article, nav, ul, li, a, p, img, footer {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin article-header-logo-property($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 50px;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    color: #26292D;
+
+    #wrapper {
+        /*width: 980px;*/
+        max-width: 100%;
+        margin: 0 auto;
+
+        header {
+            width: 100%;
+            padding: 30px 0;
+
+            .logo-box {
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 120px;
+                margin: 0 100px 0 8%;
+
+                &:hover {
+                    cursor: pointer;
+                    -ms-transform: rotate(-15deg); /* IE 9 */
+                    -webkit-transform: rotate(-15deg); /* Safari */
+                    transform: rotate(-15deg);
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            nav {
+                display: inline-block;
+                vertical-align: middle;
+                width: 66%;
+                text-align: right;
+
+                ul {
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        margin: 0 3px;
+
+                        a {
+                            text-decoration: none;
+                            display: block;
+                            padding: 10px;
+                            color: #999;
+
+                            &:hover {
+                                text-decoration: underline;
+                                background-color: #EEEEEE;
+                                color: #999;
+                            }
+                        }
+
+                        .selected {
+                            background-color: #53BAD0;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .header-img-box {
+                background-image: url('../images/background-large.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                color: #fff;
+                padding: 50px 10px 90px 10px;
+                margin-top: 10px;
+
+                h1 {
+                    font-size: 2.5em;
+                    margin: 20px 0 30px 0;
+                }
+
+                p {
+                    font-size: 1.3em;
+                    max-width: 960px;
+                    margin: 0 auto;
+                }
+
+                button {
+                    width: 28%;
+                    max-width: 258px;
+                    padding: 15px;
+                    margin: 30px 0;
+                    background: rgba(72, 49, 52, 0.5);
+                    border: solid 2px #fff;
+                    outline: none;
+                    font-family: Raleway, sans-serif;
+                    font-size: 1.3em;
+                    color: #fff;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:focus {
+                        border-color: #84CCD8;
+                    }
+                }
+            }
+        }
+
+        section {
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+
+            & > header {
+                padding: 30px 0;
+
+                h2 {
+                    text-align: center;
+                    font-weight: normal;
+                }
+            }
+
+            article {
+                display: inline-block;
+                width: 30%;
+                vertical-align: top;
+                margin: 0 14px;
+                padding: 0 20px 30px 20px;
+
+                &:hover {
+                    background-color: #F2F2F2;
+                    cursor: pointer;
+                }
+
+                &:hover a {
+                    color: #999;
+                    text-decoration: underline;
+                }
+
+                header {
+                    h3 {
+                        font-weight: normal;
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 80%;
+                    }
+                }
+
+                p {
+                    color: #999999;
+                    margin-bottom: 20px;
+
+                    a {
+                        color: #84CCD8;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            #search {
+                header {
+                    div {
+                        @include article-header-logo-property('../images/search-icon.png');
+                    }
+                }
+            }
+
+            #navigation {
+                header {
+                    div {
+                        @include article-header-logo-property('../images/navigation-icon.png');
+                    }
+                }
+            }
+
+            #shopping {
+                header {
+                    div {
+                        @include article-header-logo-property('../images/shopping-icon.png');
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: #111111;
+            width: 100%;
+            color: #999;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 80px;
+            border-top: solid 4px #009ACA;
+
+            p {
+                font-size: 0.9em;
+            }
+        }
+    }
+}

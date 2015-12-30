@@ -1,0 +1,86 @@
+﻿body, div, section, header, h1, h2, h3, article, img, p, a {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin item-logo-property($url) {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    font-family: Verdana, Helvetica;
+    font-size: 14px;
+
+    #wrapper {
+        width: 100%;
+        padding: 10px;
+
+        section {
+            padding: 5px;
+            border: dotted 1px #999;
+
+            & > header {
+                background-color: #E9F5FE;
+                padding: 10px 5px;
+                margin-bottom: 15px;
+                border: dotted 1px #999;
+
+                h1 {
+                    color: #125675;
+                    font-size: 23px;
+                }
+            }
+
+            article {
+                header {
+                    padding: 5px 0;
+
+                    h2 {
+                        color: #2ABBF5;
+                        font-size: 15px;
+                    }
+                }
+
+                .content {
+                    padding: 0 10px;
+
+                    .item {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 120px;
+                        height: 120px;
+                        padding: 20px 10px;
+                        text-align: center;
+                        border-radius: 5px;
+
+                        &:hover {
+                            background-color: #D0E0EC;
+                            cursor: pointer;
+                        }
+
+                        .img-box-project {
+                            @include item-logo-property('../images/project-icon.png');
+                        }
+
+                        .img-box-group {
+                            @include item-logo-property('../images/group-icon.png');
+                        }
+
+                        p a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

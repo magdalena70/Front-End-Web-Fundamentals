@@ -1,0 +1,236 @@
+﻿body, div, section, header, h1, h2, h3, h4,
+article, aside, p, nav, ul, li, a, form, input, button {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin input-property {
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body {
+    font-family: Georgia;
+    font-size: 16px;
+    color: #777777;
+
+    #wrapper {
+        max-width: 940px;
+        margin: 0 auto;
+
+        & > header {
+            width: 564px;
+            margin: 0 auto;
+            text-align: center;
+
+            h1 {
+                padding: 10px;
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                    vertical-align: middle;
+                    margin-right: 6px;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: "Patua One";
+                    font-size: 45px;
+                    color: #444444;
+                    letter-spacing: 2px;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: #777777;
+                    }
+                }
+            }
+
+            p {
+                font-size: 12px;
+                font-style: italic;
+            }
+
+            nav {
+                margin: 20px 0;
+                padding: 5px 0;
+                border-bottom: dashed 1px #999;
+                border-top: dashed 1px #999;
+
+                ul {
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+
+                        a {
+                            text-decoration: none;
+                            color: #999;
+                            font-weight: bold;
+                            display: block;
+                            padding: 10px;
+
+                            &:hover {
+                                color: #777777;
+                            }
+                        }
+
+                        .selected {
+                            background-color: #EEEEEE;
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 77.3%;
+            margin-right: 10px;
+
+            .banner-box {
+                width: 940px;
+                margin: 0 auto;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            & > header {
+                width: 564px;
+                margin: 30px auto;
+                padding: 20px 0;
+                text-align: center;
+                border-bottom: dashed 1px #999;
+                border-top: dashed 1px #999;
+
+                h2 {
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+
+            & > article {
+                color: #000;
+
+                header {
+                    h3 {
+                        font-size: 30px;
+                        font-weight: normal;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        aside {
+            display: inline-block;
+            vertical-align: 70px;
+            width: 21%;
+
+            article {
+                border: dashed 1px #999;
+                padding: 20px;
+
+                h4 {
+                    margin-bottom: 7px;
+                }
+
+                p {
+                    a {
+                        text-decoration: none;
+                        font-size: 14px;
+                        color: #5593D4;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: #FE4B33;
+                            text-decoration: underline;
+                        }
+
+                        &:focus {
+                            color: #886AC0;
+                        }
+                    }
+                }
+            }
+
+            & > article {
+                margin-bottom: 20px;
+
+                form {
+                    width: 100%;
+
+                    input {
+                        display: inline-block;
+                        margin-bottom: 20px;
+                        border: solid 1px #999;
+                        outline: none;
+
+                        &[type="search"] {
+                            @include input-property;
+                            width: 57%;
+                            padding: 4px;
+                            -webkit-appearance: textfield;
+
+                            &::-webkit-search-decoration,
+                            &::-webkit-search-cancel-button {
+                                -webkit-appearance: none;
+                            }
+
+                            &:focus {
+                                border: solid 1px #A1C3FA;
+                            }
+                        }
+
+                        &[type="submit"] {
+                            width: 40%;
+                            font-family: Arial;
+                            padding: 2px;
+
+                            &:hover {
+                                cursor: pointer;
+                                border-color: #000;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+            width: 100%;
+            max-width: 1260px;
+            background-color: #EEEEEE;
+            padding: 10px;
+            margin: 50px auto 0 auto;
+            text-align: center;
+            border-top: solid 1px #999;
+
+            p {
+                font-size: 13px;
+            }
+        }
+}

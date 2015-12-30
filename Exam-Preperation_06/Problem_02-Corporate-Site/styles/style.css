@@ -1,0 +1,226 @@
+﻿@font-face {
+  font-family: Raleway;
+  src: url("fonts/Raleway-Regular.ttf");
+}
+
+body, div, header, h1, h2, h3, section, article, nav, ul, li, a, p, img, footer {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  color: #26292D;
+}
+
+body #wrapper {
+  /*width: 980px;*/
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body #wrapper header {
+  width: 100%;
+  padding: 30px 0;
+}
+
+body #wrapper header .logo-box {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 120px;
+  margin: 0 100px 0 8%;
+}
+
+body #wrapper header .logo-box:hover {
+  cursor: pointer;
+  -ms-transform: rotate(-15deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-15deg);
+  /* Safari */
+  transform: rotate(-15deg);
+}
+
+body #wrapper header .logo-box a {
+  text-decoration: none;
+}
+
+body #wrapper header .logo-box img {
+  max-width: 100%;
+}
+
+body #wrapper header nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 66%;
+  text-align: right;
+}
+
+body #wrapper header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+body #wrapper header nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #999;
+}
+
+body #wrapper header nav ul li a:hover {
+  text-decoration: underline;
+  background-color: #EEEEEE;
+  color: #999;
+}
+
+body #wrapper header nav ul li .selected {
+  background-color: #53BAD0;
+  color: #fff;
+}
+
+body #wrapper header .header-img-box {
+  background-image: url("../images/background-large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 50px 10px 90px 10px;
+  margin-top: 10px;
+}
+
+body #wrapper header .header-img-box h1 {
+  font-size: 2.5em;
+  margin: 20px 0 30px 0;
+}
+
+body #wrapper header .header-img-box p {
+  font-size: 1.3em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body #wrapper header .header-img-box button {
+  width: 28%;
+  max-width: 258px;
+  padding: 15px;
+  margin: 30px 0;
+  background: rgba(72, 49, 52, 0.5);
+  border: solid 2px #fff;
+  outline: none;
+  font-family: Raleway, sans-serif;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+body #wrapper header .header-img-box button:hover {
+  cursor: pointer;
+}
+
+body #wrapper header .header-img-box button:focus {
+  border-color: #84CCD8;
+}
+
+body #wrapper section {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+body #wrapper section > header {
+  padding: 30px 0;
+}
+
+body #wrapper section > header h2 {
+  text-align: center;
+  font-weight: normal;
+}
+
+body #wrapper section article {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 14px;
+  padding: 0 20px 30px 20px;
+}
+
+body #wrapper section article:hover {
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+body #wrapper section article:hover a {
+  color: #999;
+  text-decoration: underline;
+}
+
+body #wrapper section article header h3 {
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+
+body #wrapper section article p {
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+body #wrapper section article p a {
+  color: #84CCD8;
+  text-decoration: none;
+}
+
+body #wrapper section #search header div {
+  background-image: url("../images/search-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 50px;
+}
+
+body #wrapper section #navigation header div {
+  background-image: url("../images/navigation-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 50px;
+}
+
+body #wrapper section #shopping header div {
+  background-image: url("../images/shopping-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 50px;
+}
+
+body #wrapper footer {
+  background-color: #111111;
+  width: 100%;
+  color: #999;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 80px;
+  border-top: solid 4px #009ACA;
+}
+
+body #wrapper footer p {
+  font-size: 0.9em;
+}
+
+/*# sourceMappingURL=style.css.map */

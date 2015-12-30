@@ -1,0 +1,88 @@
+﻿body, div, section, header, h1, h2, h3, article, img, p, a {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Helvetica;
+  font-size: 14px;
+}
+
+body #wrapper {
+  width: 100%;
+  padding: 10px;
+}
+
+body #wrapper section {
+  padding: 5px;
+  border: dotted 1px #999;
+}
+
+body #wrapper section > header {
+  background-color: #E9F5FE;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  border: dotted 1px #999;
+}
+
+body #wrapper section > header h1 {
+  color: #125675;
+  font-size: 23px;
+}
+
+body #wrapper section article header {
+  padding: 5px 0;
+}
+
+body #wrapper section article header h2 {
+  color: #2ABBF5;
+  font-size: 15px;
+}
+
+body #wrapper section article .content {
+  padding: 0 10px;
+}
+
+body #wrapper section article .content .item {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  height: 120px;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+body #wrapper section article .content .item:hover {
+  background-color: #D0E0EC;
+  cursor: pointer;
+}
+
+body #wrapper section article .content .item .img-box-project {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  background-image: url("../images/project-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body #wrapper section article .content .item .img-box-group {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  background-image: url("../images/group-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body #wrapper section article .content .item p a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

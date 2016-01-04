@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Free Account</title>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" class="selected">Paragliding</a></li>
+                    <li><a href="#" class="skydiving">Skydiving</a></li>
+                    <li><a href="#" class="climbing">Climbing</a></li>
+                    <li><a href="#" class="about-us">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form method="get" action="index.html">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label for="name"></label><!--
+                --><input type="text" id="name" name="name" placeholder="Enter your full name" />
+                <label for="email"></label><!--
+                --><input type="email" id="email" name="email" placeholder="Enter a valid e-mail" />
+                <label for="phone"></label><!--
+                --><input type="text" id="phone" name="phone" placeholder="Enter a phone number" />
+            </fieldset>
+            <fieldset>
+                <legend>Flight Info</legend>
+                <p>Are flying for first time?</p>
+                <div id="radio-box">
+                    <input type="radio" id="yes" name="flying-count" value="true" />
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="flying-count" value="false" />
+                    <label for="no">No</label>
+                </div>  
+                <label for="destination">Choose Destination</label>
+                <select id="destination" name="destination">
+                    <option class="option-title" disabled="disabled">Bulgaria</option>
+                    <option>Dobrostan</option>
+                    <option selected="selected">Sopot</option>
+                    <option>Sofia</option>
+                    <option>Bourgas</option>
+                    <option class="option-title" disabled="disabled">Rest of the world</option>
+                    <option>Nepal</option>
+                    <option>Turkey</option>
+                    <option>France</option>
+                </select>
+                <label for="date">Choose Date</label>
+                <input type="date" id="date" name="date" />
+            </fieldset>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>

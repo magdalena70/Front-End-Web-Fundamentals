@@ -1,0 +1,149 @@
+﻿@font-face {
+    font-family: RicksAmericanNF;
+    src: url("fonts/RicksAmericanNF.ttf");
+}
+
+body, div, header, h1, h2, article, aside, img, figure, figcaption, p {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: oArial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FBAC07;
+    background-color: #000;
+}
+
+    body #wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #000;
+    }
+
+        body #wrapper > header {
+            width: 100%;
+            font-family: RicksAmericanNF;
+            text-align: center;
+        }
+
+            body #wrapper > header h1 {
+                font-size: 60px;
+                text-transform: uppercase;
+                letter-spacing: 15px;
+                word-spacing: 20px;
+            }
+
+            body #wrapper > header nav ul li {
+                list-style-type: none;
+                display: inline-block;
+                margin: 0 35px;
+            }
+
+                body #wrapper > header nav ul li a {
+                    font-size: 30px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 5px 30px;
+                    color: #FBAC07;
+                    letter-spacing: 5px;
+                }
+
+                    body #wrapper > header nav ul li a:hover {
+                        cursor: pointer;
+                        background-color: #FBAC07;
+                        color: #3C3C3C;
+                        border-radius: 30px;
+                    }
+
+        body #wrapper #main {
+            background-color: #3C3C3C;
+            padding: 5px 20px;
+        }
+
+            body #wrapper #main section {
+                display: inline-block;
+                width: 70%;
+                vertical-align: top;
+            }
+
+                body #wrapper #main section article header {
+                    text-align: center;
+                }
+
+                    body #wrapper #main section article header h2 {
+                        font-size: 23px;
+                        text-transform: uppercase;
+                    }
+
+                body #wrapper #main section article .img-box {
+                    display: inline-block;
+                    width: 45%;
+                    vertical-align: top;
+                }
+
+                    body #wrapper #main section article .img-box img {
+                        width: 100%;
+                        max-width: 289px;
+                    }
+
+                body #wrapper #main section article .section-article-content {
+                    display: inline-block;
+                    width: 45%;
+                    vertical-align: top;
+                }
+
+                    body #wrapper #main section article .section-article-content p {
+                        text-indent: 30px;
+                        word-spacing: 13px;
+                    }
+
+                        body #wrapper #main section article .section-article-content p a {
+                            color: #FBAC07;
+                            text-decoration: none;
+                            font-weight: bold;
+                        }
+
+                            body #wrapper #main section article .section-article-content p a:hover {
+                                text-decoration: underline;
+                            }
+
+            body #wrapper #main aside {
+                display: inline-block;
+                width: 25%;
+                vertical-align: top;
+            }
+
+                body #wrapper #main aside figure {
+                    width: 229px;
+                    border: solid 1px #FBAC07;
+                    border-radius: 10px;
+                    margin: 10px 0;
+                }
+
+                    body #wrapper #main aside figure:hover {
+                        cursor: pointer;
+                        background-color: #FBAC07;
+                        color: #3C3C3C;
+                    }
+
+                    body #wrapper #main aside figure img {
+                        max-width: 100%;
+                        border-radius: 10px 10px 0 0;
+                    }
+
+                    body #wrapper #main aside figure figcaption {
+                        text-align: center;
+                        font-weight: bold;
+                    }
+
+        body #wrapper footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+/*# sourceMappingURL=style.css.map */

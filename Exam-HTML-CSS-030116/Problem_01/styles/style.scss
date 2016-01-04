@@ -1,0 +1,88 @@
+﻿body, div, button {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+    #wrapper {
+        width: 1100px;
+        margin: 0 auto;
+        padding: 100px;
+        background-color: #F0E3D3;
+
+        #container {
+            width: 900px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: #D7A081;
+
+            #left, #right {
+                display: inline-block;
+                vertical-align: top;
+                width: 292px;
+                height: 500px;
+                padding: 45px;
+                text-align: center;
+
+                .button-box {
+                    width: 100%;
+                    padding: 25px;
+                    margin: 0 auto 55px auto;
+                    background-color: #fff;
+
+                    button{
+                        width: 100%;
+                        padding: 12px;
+                        background-color: #D7A081;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 22px;
+                        outline: none;
+
+                        &:hover{
+                            cursor: pointer;
+                            box-shadow: 1px 2px 12px #808080;
+                            color: #fff;
+                        }
+
+                        &:focus{
+                            outline: solid 1px #35A0FF;
+                        }
+                    }
+                }
+            }
+
+            #middle {
+                display: inline-block;
+                vertical-align: top;
+                width: 300px;
+                height: 500px;
+                background-color: #75191A;
+                padding: 45px;
+
+                .white {
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 25px;
+                }
+
+                .img-box {
+                    width: 150px;
+                    height: 360px;
+                    margin: 0 auto;
+                    background-image: url('../resources/picture.jpg');
+                    background-repeat: repeat;
+                    background-position: center center;
+                    border-radius: 8px;
+
+                }
+            }
+        }
+    }
+}

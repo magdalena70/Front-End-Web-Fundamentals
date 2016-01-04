@@ -1,0 +1,275 @@
+﻿body, div, header, nav ul, li, a, form, fieldset, legend, input, label {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*input placeholder property*/
+::-webkit-input-placeholder {
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+/*input type date property*/
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/*label background property*/
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 20px;
+    color: #285F8D;
+    background-image: url("../resources/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+    body #wrapper {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(220, 229, 236, 0.3);
+        border-radius: 10px;
+        box-shadow: 1px 2px 10px #fff;
+    }
+
+        body #wrapper header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+            body #wrapper header nav ul li {
+                list-style-type: none;
+                display: inline-block;
+                margin: 0 10px;
+            }
+
+                body #wrapper header nav ul li a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    padding: 15px 5px;
+                    color: #285F8D;
+                    border-radius: 10px;
+                }
+
+                    body #wrapper header nav ul li a:hover {
+                        background-color: #76ACD2;
+                        cursor: pointer;
+                    }
+
+                body #wrapper header nav ul li .selected {
+                    background-color: #76ACD2;
+                }
+
+                    body #wrapper header nav ul li .selected:before {
+                        content: url("../resources/paraglider-icon.png");
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                body #wrapper header nav ul li .skydiving:before {
+                    content: url("../resources/sky-diver.png");
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                body #wrapper header nav ul li .climbing:before {
+                    content: url("../resources/climbing.png");
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                body #wrapper header nav ul li .about-us:before {
+                    content: url("../resources/about-us.png");
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+        body #wrapper form:after {
+            clear: both;
+            content: "";
+            visibility: hidden;
+            height: 0;
+            display: block;
+        }
+
+        body #wrapper form fieldset {
+            display: inline-block;
+            vertical-align: top;
+            width: 49%;
+            height: 328px;
+            padding: 10px;
+            border: solid 2px #285F8D;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+            body #wrapper form fieldset legend {
+                text-align: center;
+            }
+
+            body #wrapper form fieldset label:hover {
+                cursor: pointer;
+            }
+
+            body #wrapper form fieldset label[for=name] {
+                display: inline-block;
+                vertical-align: middle;
+                width: 40px;
+                height: 40px;
+                border: solid 1px #285F8D;
+                border-right: none;
+                border-radius: 20px 0 0 20px;
+                background: rgba(220, 229, 236, 0.3);
+                background-image: url("../resources/user1.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            body #wrapper form fieldset label[for=email] {
+                display: inline-block;
+                vertical-align: middle;
+                width: 40px;
+                height: 40px;
+                border: solid 1px #285F8D;
+                border-right: none;
+                border-radius: 20px 0 0 20px;
+                background: rgba(220, 229, 236, 0.3);
+                background-image: url("../resources/email.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            body #wrapper form fieldset label[for=phone] {
+                display: inline-block;
+                vertical-align: middle;
+                width: 40px;
+                height: 40px;
+                border: solid 1px #285F8D;
+                border-right: none;
+                border-radius: 20px 0 0 20px;
+                background: rgba(220, 229, 236, 0.3);
+                background-image: url("../resources/phone.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            body #wrapper form fieldset input, body #wrapper form fieldset select {
+                display: inline-block;
+                width: 100%;
+                background: rgba(220, 229, 236, 0.3);
+                border: solid 1px #285F8D;
+                border-radius: 20px;
+                padding: 5px;
+                margin: 5px 0;
+                font-size: 22px;
+                color: #7594B4;
+                text-align: center;
+                outline: none;
+            }
+
+                body #wrapper form fieldset input:focus, body #wrapper form fieldset select:focus {
+                    background: rgba(232, 235, 240, 0.4);
+                }
+
+                body #wrapper form fieldset input[type=text], body #wrapper form fieldset input[type=email], body #wrapper form fieldset select[type=text], body #wrapper form fieldset select[type=email] {
+                    margin: 15px 0;
+                    border-left: none;
+                    border-radius: 0 20px 20px 0;
+                    width: 80%;
+                    vertical-align: middle;
+                    height: 40px;
+                }
+
+                body #wrapper form fieldset input[type=date], body #wrapper form fieldset select[type=date] {
+                    text-indent: 30px;
+                    color: #285F8D;
+                }
+
+            body #wrapper form fieldset select {
+                padding: 10px 2px;
+                color: #285F8D;
+            }
+
+                body #wrapper form fieldset select option {
+                    font-size: 14px;
+                    text-indent: 30px;
+                    background-color: #C0E1EA;
+                }
+
+        body #wrapper form input[type=reset], body #wrapper form input[type=submit] {
+            width: 120px;
+            background-color: transparent;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 5px;
+            margin: 5px;
+            border-radius: 20px;
+            float: right;
+        }
+
+        body #wrapper form input[type=reset] {
+            color: #B20000;
+            border: solid 2px #B20000;
+        }
+
+            body #wrapper form input[type=reset]:hover {
+                cursor: pointer;
+                background-color: #B20000;
+                color: #fff;
+            }
+
+        body #wrapper form input[type=submit] {
+            color: #01B400;
+            border: solid 2px #01B400;
+        }
+
+            body #wrapper form input[type=submit]:hover {
+                cursor: pointer;
+                background-color: #01B400;
+                color: #fff;
+            }
+
+        body #wrapper form #radio-box {
+            width: 100%;
+            text-align: center;
+        }
+
+            body #wrapper form #radio-box input[type=radio] {
+                display: inline-block;
+                vertical-align: middle;
+                width: 20px;
+            }
+
+            body #wrapper form #radio-box > label {
+                width: 50px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+/*# sourceMappingURL=style.css.map */

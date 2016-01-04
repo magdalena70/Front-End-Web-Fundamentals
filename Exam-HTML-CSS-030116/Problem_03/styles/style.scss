@@ -1,0 +1,278 @@
+﻿body, div, header, nav ul, li, a, form, fieldset, legend, input, label {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*input placeholder property*/
+::-webkit-input-placeholder {
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    color: #285F8D;
+    font-size: 22px;
+    text-align: center;
+}
+
+/*input type date property*/
+input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+@mixin input-overflow-property {
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*label background property*/
+@mixin label-background($url) {
+    width: 40px;
+    height: 40px;
+    border: solid 1px #285F8D;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    background: rgba(220, 229, 236, 0.3);
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin clearfix-property {
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    display: block;
+}
+
+@mixin nav-img-styling($url) {
+    content: url($url);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 20px;
+    color: #285F8D;
+    background-image: url('../resources/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    #wrapper {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(220, 229, 236, 0.3);
+        border-radius: 10px;
+        box-shadow: 1px 2px 10px #fff;
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+
+            nav {
+                ul {
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        margin: 0 10px;
+
+                        a {
+                            text-decoration: none;
+                            font-weight: bold;
+                            padding: 15px 5px;
+                            color: #285F8D;
+                            border-radius: 10px;
+
+                            &:hover {
+                                background-color: #76ACD2;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .selected {
+                            background-color: #76ACD2;
+                        }
+
+                        .selected:before {
+                            @include nav-img-styling('../resources/paraglider-icon.png');
+                        }
+
+                        .skydiving:before {
+                            @include nav-img-styling('../resources/sky-diver.png');
+                        }
+
+                        .climbing:before {
+                            @include nav-img-styling('../resources/climbing.png');
+                        }
+
+                        .about-us:before {
+                            @include nav-img-styling('../resources/about-us.png');
+                        }
+                    }
+                }
+            }
+        }
+
+        form {
+
+            &:after {
+                @include clearfix-property;
+            }
+
+            fieldset {
+                display: inline-block;
+                vertical-align: top;
+                width: 49%;
+                height: 328px;
+                padding: 10px;
+                border: solid 2px #285F8D;
+                border-radius: 10px;
+                text-align: center;
+
+                legend {
+                    text-align: center;
+                }
+
+                label:hover {
+                    cursor: pointer;
+                }
+
+                label[for=name] {
+                    display: inline-block;
+                    vertical-align: middle;
+                    @include label-background('../resources/user1.png');
+                }
+
+                label[for=email] {
+                    display: inline-block;
+                    vertical-align: middle;
+                    @include label-background('../resources/email.png');
+                }
+
+                label[for=phone] {
+                    display: inline-block;
+                    vertical-align: middle;
+                    @include label-background('../resources/phone.png');
+                }
+
+                input, select {
+                    display: inline-block;
+                    width: 100%;
+                    background: rgba(220, 229, 236, 0.3);
+                    border: solid 1px #285F8D;
+                    border-radius: 20px;
+                    padding: 5px;
+                    margin: 5px 0;
+                    font-size: 22px;
+                    color: #7594B4;
+                    text-align: center;
+                    outline: none;
+
+                    &:focus {
+                        background: rgba(232, 235, 240, 0.4);
+                    }
+
+                    &[type=text], &[type=email] {
+                        margin: 15px 0;
+                        border-left: none;
+                        border-radius: 0 20px 20px 0;
+                        width: 80%;
+                        vertical-align: middle;
+                        height: 40px;
+                    }
+
+                    &[type=date] {
+                        text-indent: 30px;
+                        color: #285F8D;
+                    }
+                }
+
+                select {
+                    padding: 10px 2px;
+                    color: #285F8D;
+
+                    option {
+                        font-size: 14px;
+                        text-indent: 30px;
+                        background-color: #C0E1EA;
+                    }
+                }
+            }
+
+            input[type=reset], input[type=submit] {
+                width: 120px;
+                background-color: transparent;
+                font-size: 24px;
+                font-weight: bold;
+                padding: 10px 5px;
+                margin: 5px;
+                border-radius: 20px;
+                float: right;
+            }
+
+            input[type=reset] {
+                color: #B20000;
+                border: solid 2px #B20000;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #B20000;
+                    color: #fff;
+                }
+            }
+
+            input[type=submit] {
+                color: #01B400;
+                border: solid 2px #01B400;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #01B400;
+                    color: #fff;
+                }
+            }
+
+            #radio-box {
+                width: 100%;
+                text-align: center;
+
+                input[type=radio] {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20px;
+                }
+
+                & > label {
+                    width: 50px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

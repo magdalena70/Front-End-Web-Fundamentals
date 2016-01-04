@@ -1,0 +1,156 @@
+﻿@font-face {
+    font-family: RicksAmericanNF;
+    src: url('fonts/RicksAmericanNF.ttf');
+}
+
+body, div, header, h1, h2, article, aside, img, figure, figcaption, p {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin hover-property {
+    cursor: pointer;
+    background-color: #FBAC07;
+    color: #3C3C3C;
+}
+
+body {
+    font-family: oArial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FBAC07;
+    background-color: #000;
+
+    #wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #000;
+
+        & > header {
+            width: 100%;
+            font-family: RicksAmericanNF;
+            text-align: center;
+
+            h1 {
+                font-size: 60px;
+                text-transform: uppercase;
+                letter-spacing: 15px;
+                word-spacing: 20px;
+            }
+
+            nav {
+                ul {
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        margin: 0 35px;
+
+                        a {
+                            font-size: 30px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            padding: 5px 30px;
+                            color: #FBAC07;
+                            letter-spacing: 5px;
+
+                            &:hover {
+                                @include hover-property;
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #main {
+            background-color: #3C3C3C;
+            padding: 5px 20px;
+
+            section {
+                display: inline-block;
+                width: 70%;
+                vertical-align: top;
+
+                article {
+
+                    header {
+                        text-align: center;
+
+                        h2 {
+                            font-size: 23px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    .img-box {
+                        display: inline-block;
+                        width: 45%;
+                        vertical-align: top;
+
+                        img {
+                            width: 100%;
+                            max-width: 289px;
+                        }
+                    }
+
+                    .section-article-content {
+                        display: inline-block;
+                        width: 45%;
+                        vertical-align: top;
+
+                        p {
+                            text-indent: 30px;
+                            word-spacing: 13px;
+
+                            a {
+                                color: #FBAC07;
+                                text-decoration: none;
+                                font-weight: bold;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            aside {
+                display: inline-block;
+                width: 25%;
+                vertical-align: top;
+
+                figure {
+                    width: 229px;
+                    border: solid 1px #FBAC07;
+                    border-radius: 10px;
+                    margin: 10px 0;
+
+                    &:hover {
+                        @include hover-property;
+                    }
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 10px 10px 0 0;
+                    }
+
+                    figcaption {
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
